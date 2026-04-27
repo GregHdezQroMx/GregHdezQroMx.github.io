@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | I.S.C. José Gregorio Hernández Trejo</title>
+  <meta name="description" content="Contact I.S.C. José Gregorio Hernández Trejo for software consulting and mobile solutions for PYMEs." />
+  <meta name="keywords" content="Contact, consulting, PYMEs, software, Android, Kotlin" />
+  <meta name="author" content="I.S.C. José Gregorio Hernández Trejo" />
+  <meta name="theme-color" content="#0A192F" />
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#0A192F',
+              accent: '#00E676',
+              secondary: '#8892B0',
+              surface: '#112240',
+              lighter: '#233554',
+            }
+          },
+          borderRadius: {
+            'custom': '8px',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="bg-brand-dark text-slate-200 font-sans selection:bg-brand-accent selection:text-black overflow-x-hidden">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 glass-effect" role="navigation" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="assets/Foto_perfil_new.jpg" alt="Profile photo of I.S.C. José Gregorio Hernández Trejo" class="w-16 h-16 rounded-full border border-brand-accent shadow-sm ring-4 ring-brand-accent/40 object-cover" />
+        <span class="font-bold text-lg tracking-tight hidden sm:block text-white">I.S.C. José Gregorio Hernández Trejo</span>
+      </div>
+      <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wider text-brand-secondary">
+        <a href="index.en.html" class="hover:text-brand-accent transition-colors normal-case">Home</a>
+        <a href="tecnologia.en.html" class="hover:text-brand-accent transition-colors normal-case">Technology</a>
+        <a href="habilidades.en.html" class="hover:text-brand-accent transition-colors normal-case">Skills</a>
+        <a href="portfolio.en.html" class="hover:text-brand-accent transition-colors normal-case">Portfolio</a>
+        <a href="experiencia.en.html" class="hover:text-brand-accent transition-colors normal-case">Experience</a>
+      </div>
+      <div class="flex items-center space-x-2 text-xs">
+        <a href="contacto.html" class="text-brand-secondary hover:text-brand-accent">ES</a>
+        <span class="text-brand-secondary">|</span>
+        <a href="contacto.en.html" class="text-brand-secondary hover:text-brand-accent">EN</a>
+      </div>
+      <a href="contacto.en.html" class="bg-brand-accent hover:bg-[#00c853] text-black px-6 py-2.5 rounded-custom font-semibold transition-all shadow-lg shadow-brand-accent/20 active:scale-95">
+        Contact
+      </a>
+    </div>
+  </nav>
+
+  <main class="pt-20">
+    <section class="py-24 bg-[#081324] border-y border-white/5">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <header class="mb-14">
+          <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Ready to transform your business?</h1>
+          <p class="text-base text-brand-secondary max-w-2xl mx-auto">Tell me about your challenge and together we will design a solution that grows your PYME. From mobile apps to scalable digital products.</p>
+        </header>
+
+        <div class="max-w-3xl mx-auto">
+          <!-- Contact Cards -->
+          <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <!-- Email Card -->
+            <a href="mailto:ghetzoom@gmail.com" class="bg-brand-surface p-8 rounded-custom border border-white/10 hover:border-brand-accent/40 hover:shadow-xl hover:shadow-brand-accent/10 transition-all text-center group">
+              <div class="w-12 h-12 bg-brand-accent/10 rounded-full flex items-center justify-center text-brand-accent mx-auto mb-4 group-hover:bg-brand-accent group-hover:text-black transition-all">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                </svg>
+              </div>
+              <h3 class="text-white font-bold mb-2 text-sm">Email</h3>
+              <span class="text-brand-secondary text-[10px] break-all">ghetzoom@gmail.com</span>
+            </a>
+
+            <!-- Phone Card -->
+            <a href="tel:+524271081703" class="bg-brand-surface p-8 rounded-custom border border-white/10 hover:border-brand-accent/40 hover:shadow-xl hover:shadow-brand-accent/10 transition-all text-center group">
+              <div class="w-12 h-12 bg-brand-accent/10 rounded-full flex items-center justify-center text-brand-accent mx-auto mb-4 group-hover:bg-brand-accent group-hover:text-black transition-all">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 005.454 5.454l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                </svg>
+              </div>
+              <h3 class="text-white font-bold mb-2 text-sm">Phone</h3>
+              <span class="text-brand-secondary text-xs">+52 427 108 1703</span>
+            </a>
+
+            <!-- LinkedIn Card -->
+            <a href="https://www.linkedin.com/in/greg-hernandez-android-dev/" target="_blank" rel="noopener noreferrer" class="bg-brand-surface p-8 rounded-custom border border-white/10 hover:border-brand-accent/40 hover:shadow-xl hover:shadow-brand-accent/10 transition-all text-center group">
+              <div class="w-12 h-12 bg-brand-accent/10 rounded-full flex items-center justify-center text-brand-accent mx-auto mb-4 group-hover:bg-brand-accent group-hover:text-black transition-all">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 448 512">
+                  <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                </svg>
+              </div>
+              <h3 class="text-white font-bold mb-2 text-sm">LinkedIn</h3>
+              <span class="text-brand-secondary text-xs">Professional Profile</span>
+            </a>
+          </div>
+
+          <!-- Hidden Form (Commented for future use) -->
+          <!--
+          <div data-purpose="contact-form-container" class="bg-brand-surface rounded-custom border border-white/5 p-10 shadow-xl hidden">
+            <form action="#" method="POST" novalidate>
+              <h2 class="text-xl font-semibold text-white mb-4">Send a message</h2>
+              <div class="grid gap-6">
+                ... rest of the form ...
+              </div>
+            </form>
+          </div>
+          -->
+
+          <div class="text-center mt-12 text-brand-secondary">
+            <p class="text-sm italic">Looking for immediate technical consulting? Contact me via WhatsApp or LinkedIn for a faster response.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-12 border-t border-white/5 bg-[#081324]">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-brand-secondary">
+      <div class="mb-4 md:mb-0">
+        © 2026 I.S.C. José Gregorio Hernández Trejo. Software Consulting & Digital Transformation.
+      </div>
+      <div class="flex space-x-8">
+        <a href="https://www.linkedin.com/in/greg-hernandez-android-dev/" target="_blank" class="hover:text-brand-accent transition-colors normal-case">LinkedIn</a>
+        <a href="#" class="hover:text-brand-accent transition-colors normal-case">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

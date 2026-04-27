@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>I.S.C. José Gregorio Hernández Trejo | Consultoría de Software &amp; Transformación Digital</title>
+<meta content="Arquitectura de software escalable para PYMES. Consultoría experta en Kotlin Multiplatform (KMP), Android, iOS y Web con más de 20 años de experiencia." name="description"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#0A192F', // Deep midnight navy
+              accent: '#00E676', // Kotlin brand green
+              secondary: '#8892B0', // Muted blue-grey for secondary text
+              surface: '#112240', // Slightly lighter navy for cards
+              lighter: '#233554', // Lighter navy for borders/hover
+            }
+          },
+          borderRadius: {
+            'custom': '8px',
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-animations">
+    @keyframes fade-in-up {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in-up {
+      animation: fade-in-up 0.6s ease-out forwards;
+    }
+    .glass-effect {
+      background: rgba(10, 25, 47, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+    }
+    .tech-pattern {
+      background-image: radial-gradient(#112240 1px, transparent 1px);
+      background-size: 30px 30px;
+    }
+    .card-gradient:hover {
+      background: linear-gradient(135deg, rgba(17, 34, 64, 1) 0%, rgba(10, 25, 47, 1) 100%);
+    }
+
+    /* Simplified KMP Hero Visual Styles */
+    @keyframes orbit {
+      from { transform: rotate(0deg) translateX(140px) rotate(0deg); }
+      to { transform: rotate(360deg) translateX(140px) rotate(-360deg); }
+    }
+    .orbit-item {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -24px;
+      margin-left: -24px;
+    }
+    .orbit-1 { animation: orbit 20s linear infinite; }
+    .orbit-2 { animation: orbit 20s linear infinite -6.66s; }
+    .orbit-3 { animation: orbit 20s linear infinite -13.33s; }
+
+    .glass-card {
+      background: rgba(17, 34, 64, 0.6);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(0, 230, 118, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-brand-dark text-slate-200 font-sans selection:bg-brand-accent selection:text-black overflow-x-hidden">
+<!-- BEGIN: Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-effect">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center space-x-2">
+  <img src="assets/Foto_perfil_new.jpg" alt="Foto de perfil de I.S.C. José Gregorio Hernández Trejo" class="w-14 h-14 rounded-full border border-brand-accent/40 shadow-sm object-cover" />
+  <span class="font-bold text-lg tracking-tight hidden sm:block text-white">I.S.C. José Gregorio Hernández Trejo</span>
+</div>
+<div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider text-brand-secondary">
+<a class="hover:text-brand-accent transition-colors" href="#kmp">Tecnología</a>
+<a class="hover:text-brand-accent transition-colors" href="#skills">Habilidades</a>
+<a class="hover:text-brand-accent transition-colors" href="#portfolio">Portafolio</a>
+<a class="hover:text-brand-accent transition-colors" href="#trust">Experiencia</a>
+</div>
+<a class="bg-brand-accent hover:bg-[#00c853] text-black px-6 py-2.5 rounded-custom font-semibold transition-all shadow-lg shadow-brand-accent/20" href="#contact">
+      Contacto
+    </a>
+</div>
+</nav>
+<!-- END: Navigation -->
+<main>
+<!-- BEGIN: Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden tech-pattern" id="hero">
+<!-- Gradient Orbs -->
+<div class="absolute top-1/4 -left-20 w-96 h-96 bg-brand-accent/5 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-emerald-500/5 rounded-full blur-[120px]"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+<div class="animate-fade-in-up">
+<span class="inline-block py-1 px-3 rounded-full bg-brand-accent/10 border border-brand-accent/30 text-brand-accent text-xs font-bold uppercase tracking-widest mb-6">
+        Consultoría de Software &amp; Transformación Digital
+      </span>
+<h1 class="text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-white">
+        Arquitectura de <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-emerald-400">Software Escalable</span> para el Futuro de tu Negocio.
+      </h1>
+<p class="text-xl text-brand-secondary leading-relaxed mb-10 max-w-xl">
+        Con más de 20 años de experiencia técnica, ayudo a PYMES a construir aplicaciones eficientes en Android, iOS y Web usando Kotlin Multiplatform.
+      </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="px-8 py-4 bg-brand-accent hover:bg-[#00c853] rounded-custom font-bold text-lg text-black text-center transition-all transform hover:-translate-y-1 shadow-xl shadow-brand-accent/25" href="#contact">
+          Agenda una Consultoría Gratuita
+        </a>
+<a class="px-8 py-4 border border-brand-secondary/30 text-slate-200 hover:bg-white/5 hover:border-brand-accent/50 rounded-custom font-bold text-lg text-center transition-all" href="#portfolio">
+          Ver Proyectos
+        </a>
+</div>
+</div>
+<!-- BEGIN: Simplified KMP Visual -->
+<div class="hidden lg:flex justify-center items-center relative h-[500px]">
+<!-- Center Core -->
+<div class="relative z-20">
+<div class="absolute -inset-8 bg-brand-accent/10 rounded-full blur-3xl"></div>
+<div class="w-40 h-40 glass-card rounded-full flex flex-col items-center justify-center border-2 border-brand-accent/40 shadow-[0_0_60px_rgba(0,230,118,0.15)] relative z-10 text-center px-4">
+<img alt="Kotlin" class="w-12 h-12 mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0qUN7usjUydQjrj__UPBKmPy52mnmH0H2LngvPOJp_tA899ihbsIaYB_tKWd3itDX-TWIXkjL00pwfyEUontuvIxF3NO4gCxYKSqi9u-eVGpqbXLJvttNw91FB8JeFOFilkvoqT49980FvgMdT_STLbe97UX615gCzmK5-qyxt_WpmAL9Wm0kCM-tMk_Hm3Eqnx_myhLVD0oSaZEwApj3DX4PE6cMe75PFCc6vArqOlKl7oJZd8DI-mG8tUyIedSqliUypJiU2vQo"/>
+<span class="text-[9px] font-bold text-brand-accent tracking-[0.1em] uppercase block">Single Codebase</span>
+<div class="w-6 h-[1px] bg-brand-accent/30 my-1.5"></div>
+<span class="text-[9px] font-bold text-white tracking-[0.1em] uppercase block">Unified UI</span>
+</div>
+<!-- Orbiting Icons -->
+<div class="absolute inset-0 pointer-events-none">
+<!-- Connection Rings -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] border border-brand-accent/10 rounded-full"></div>
+<!-- Android -->
+<div class="orbit-item orbit-1">
+<div class="w-12 h-12 bg-brand-surface border border-brand-accent/30 rounded-xl flex items-center justify-center shadow-lg">
+<img alt="Android" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBq9hy1I5_HTZj9XVM-BOdQ5eqLhsj67aSN7VmzmnYflU7MckY6GePGwsUKRoEtBh3JZsMHamcAEdTM_-2schPr8_HAZLhN2IT_QGY2MQVF6FwRuQTl4RAiz_9QmaNoUrMb-ypexFMJaTDtv8p47JMiDroBzBFIxUoy2IaalG7sM_koAHK-uurVlFxhIjEjGgcNmNDOL3V-A6hJxhPXK5pmAtD-HIhwIlbCAHTH685m6OXLxXV7pC0l5N2ecluO4cvTWBLW7GcCYMw1"/>
+</div>
+</div>
+<!-- iOS -->
+<div class="orbit-item orbit-2">
+<div class="w-12 h-12 bg-brand-surface border border-brand-accent/30 rounded-xl flex items-center justify-center shadow-lg">
+<img alt="iOS" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWWyGyU_gUMSaoD-zHk2Dn8F9vBmDEvsEcMzp4dX_RId2WtOv78G6Qko6Je_uP0cNsJWMxx_xmSfjvKPztUVu4qoAu4P82jeCD4IvhIYQavKWamzRmrQ6XTeurTTufN3H3RgAzkAk578pSh0c4J570_-tCk8ODXYrNzWhSurWf5U_HKUN2pJ3kI3MoSLd-_w_wCCHJfz8RNNpNvyDYrb2FzSyQPV62XXntwT03dEOTON9j9F5x2R8-xnncRrlgJMWhRg8GBvcrI_bw"/>
+</div>
+</div>
+<!-- Web -->
+<div class="orbit-item orbit-3">
+<div class="w-12 h-12 bg-brand-surface border border-brand-accent/30 rounded-xl flex items-center justify-center shadow-lg">
+<img alt="Web" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTYe30qfmqSpMO3zwCPEU2cxqLhxxZbyNZAFIO-HrGVnkTxKGtbgpYBz7D4z5YWtnKVKdeFIFfTs21vzQJugyexbBNqA0QPusPq7ZCAm3fwZQBg457my7Pyimbxle3OWxGxzIlsaJ6rVJpNsLqVLEwhjsXezyLaAzNkaqrRSv1X5HfYXnh28ZXCaGeiKdyamLXQ9v5B34fHdNAfuRQCvKxHXj_rxGlCjKJYgxFhWKEwg2uug7gFhBy3T7NbZToP7gpcOZyRjoveKCC"/>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-4 left-1/2 -translate-x-1/2 text-center">
+<p class="text-xs font-bold text-brand-secondary tracking-[0.3em] uppercase opacity-60">Multiple Platforms</p>
+</div>
+</div>
+<!-- END: Simplified KMP Visual -->
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: KMP Section -->
+<section class="py-24 bg-brand-surface/40 border-y border-white/5" id="kmp">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-3xl mx-auto mb-20">
+<h2 class="text-3xl md:text-5xl font-bold mb-6 text-white">Una sola base de código. <br/><span class="text-brand-accent">Tres plataformas.</span> Ahorro inteligente.</h2>
+<p class="text-lg text-brand-secondary">Olvida pagar tres veces por el mismo desarrollo. Utilizo Kotlin Multiplatform (KMP) para crear la lógica de tu negocio una sola vez y desplegarla eficientemente.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- KMP Benefit 1 -->
+<div class="p-8 rounded-custom bg-brand-surface border border-white/5 hover:border-brand-accent/50 transition-all group" data-purpose="benefit-card">
+<div class="w-14 h-14 bg-brand-accent/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/20 transition-colors">
+<svg class="h-8 w-8 text-brand-accent" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold mb-4 text-white">Ahorro del 40%</h3>
+<p class="text-brand-secondary">Reducción drástica en costos de mantenimiento al centralizar la lógica de negocio, reglas y validaciones en un solo lugar.</p>
+</div>
+<!-- KMP Benefit 2 -->
+<div class="p-8 rounded-custom bg-brand-surface border border-white/5 hover:border-brand-accent/50 transition-all group" data-purpose="benefit-card">
+<div class="w-14 h-14 bg-brand-accent/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/20 transition-colors">
+<svg class="h-8 w-8 text-brand-accent" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold mb-4 text-white">Time-to-Market Veloz</h3>
+<p class="text-brand-secondary">Lanzamiento simultáneo en Android, iOS y Web. No esperes meses entre una plataforma y otra; llega a todos tus clientes hoy.</p>
+</div>
+<!-- KMP Benefit 3 -->
+<div class="p-8 rounded-custom bg-brand-surface border border-white/5 hover:border-brand-accent/50 transition-all group" data-purpose="benefit-card">
+<div class="w-14 h-14 bg-brand-accent/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/20 transition-colors">
+<svg class="h-8 w-8 text-brand-accent" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold mb-4 text-white">Experiencia Nativa</h3>
+<p class="text-brand-secondary">A diferencia de otras tecnologías híbridas, KMP permite que la interfaz de usuario sea 100% nativa y fluida en cada dispositivo.</p>
+</div>
+</div>
+<!-- Tech Icons Row -->
+<div class="mt-16 flex justify-center items-center space-x-12 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+<img alt="Android Icon" class="h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBq9hy1I5_HTZj9XVM-BOdQ5eqLhsj67aSN7VmzmnYflU7MckY6GePGwsUKRoEtBh3JZsMHamcAEdTM_-2schPr8_HAZLhN2IT_QGY2MQVF6FwRuQTl4RAiz_9QmaNoUrMb-ypexFMJaTDtv8p47JMiDroBzBFIxUoy2IaalG7sM_koAHK-uurVlFxhIjEjGgcNmNDOL3V-A6hJxhPXK5pmAtD-HIhwIlbCAHTH685m6OXLxXV7pC0l5N2ecluO4cvTWBLW7GcCYMw1"/>
+<img alt="iOS Icon" class="h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWWyGyU_gUMSaoD-zHk2Dn8F9vBmDEvsEcMzp4dX_RId2WtOv78G6Qko6Je_uP0cNsJWMxx_xmSfjvKPztUVu4qoAu4P82jeCD4IvhIYQavKWamzRmrQ6XTeurTTufN3H3RgAzkAk578pSh0c4J570_-tCk8ODXYrNzWhSurWf5U_HKUN2pJ3kI3MoSLd-_w_wCCHJfz8RNNpNvyDYrb2FzSyQPV62XXntwT03dEOTON9j9F5x2R8-xnncRrlgJMWhRg8GBvcrI_bw"/>
+<img alt="Web Icon" class="h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTYe30qfmqSpMO3zwCPEU2cxqLhxxZbyNZAFIO-HrGVnkTxKGtbgpYBz7D4z5YWtnKVKdeFIFfTs21vzQJugyexbBNqA0QPusPq7ZCAm3fwZQBg457my7Pyimbxle3OWxGxzIlsaJ6rVJpNsLqVLEwhjsXezyLaAzNkaqrRSv1X5HfYXnh28ZXCaGeiKdyamLXQ9v5B34fHdNAfuRQCvKxHXj_rxGlCjKJYgxFhWKEwg2uug7gFhBy3T7NbZToP7gpcOZyRjoveKCC"/>
+<img alt="Kotlin Icon" class="h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0qUN7usjUydQjrj__UPBKmPy52mnmH0H2LngvPOJp_tA899ihbsIaYB_tKWd3itDX-TWIXkjL00pwfyEUontuvIxF3NO4gCxYKSqi9u-eVGpqbXLJvttNw91FB8JeFOFilkvoqT49980FvgMdT_STLbe97UX615gCzmK5-qyxt_WpmAL9Wm0kCM-tMk_Hm3Eqnx_myhLVD0oSaZEwApj3DX4PE6cMe75PFCc6vArqOlKl7oJZd8DI-mG8tUyIedSqliUypJiU2vQo"/>
+</div>
+</div>
+</section>
+<!-- END: KMP Section -->
+<!-- BEGIN: Skills Section -->
+<section class="py-24 bg-brand-dark overflow-hidden" id="skills">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<span class="text-brand-accent font-bold tracking-widest uppercase text-xs">Expertise Técnica</span>
+<h2 class="text-4xl font-bold mt-2 text-white">Core Technical Skills</h2>
+</div>
+<div class="grid gap-12 md:grid-cols-3">
+<!-- Skill: KMP -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-32 h-32 mb-8 bg-brand-surface rounded-2xl flex items-center justify-center border border-white/5 group-hover:border-brand-accent/50 group-hover:shadow-[0_0_30px_rgba(0,230,118,0.15)] transition-all duration-300 transform group-hover:-translate-y-2">
+<img alt="Kotlin Multiplatform" class="w-16 h-16" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0qUN7usjUydQjrj__UPBKmPy52mnmH0H2LngvPOJp_tA899ihbsIaYB_tKWd3itDX-TWIXkjL00pwfyEUontuvIxF3NO4gCxYKSqi9u-eVGpqbXLJvttNw91FB8JeFOFilkvoqT49980FvgMdT_STLbe97UX615gCzmK5-qyxt_WpmAL9Wm0kCM-tMk_Hm3Eqnx_myhLVD0oSaZEwApj3DX4PE6cMe75PFCc6vArqOlKl7oJZd8DI-mG8tUyIedSqliUypJiU2vQo"/>
+</div>
+<h3 class="text-xl font-bold text-white mb-2">Kotlin Multiplatform</h3>
+<p class="text-brand-secondary text-sm px-4">Especialista en compartir lógica de negocio entre Android, iOS y Web de forma eficiente.</p>
+</div>
+<!-- Skill: Android -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-32 h-32 mb-8 bg-brand-surface rounded-2xl flex items-center justify-center border border-white/5 group-hover:border-brand-accent/50 group-hover:shadow-[0_0_30px_rgba(0,230,118,0.15)] transition-all duration-300 transform group-hover:-translate-y-2">
+<img alt="Android Development" class="w-16 h-16" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBq9hy1I5_HTZj9XVM-BOdQ5eqLhsj67aSN7VmzmnYflU7MckY6GePGwsUKRoEtBh3JZsMHamcAEdTM_-2schPr8_HAZLhN2IT_QGY2MQVF6FwRuQTl4RAiz_9QmaNoUrMb-ypexFMJaTDtv8p47JMiDroBzBFIxUoy2IaalG7sM_koAHK-uurVlFxhIjEjGgcNmNDOL3V-A6hJxhPXK5pmAtD-HIhwIlbCAHTH685m6OXLxXV7pC0l5N2ecluO4cvTWBLW7GcCYMw1"/>
+</div>
+<h3 class="text-xl font-bold text-white mb-2">Android Development</h3>
+<p class="text-brand-secondary text-sm px-4">Desarrollo nativo robusto con Jetpack Compose y arquitecturas escalables.</p>
+</div>
+<!-- Skill: iOS -->
+<!-- Skill: Compose MP -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-32 h-32 mb-8 bg-brand-surface rounded-2xl flex items-center justify-center border border-white/5 group-hover:border-brand-accent/50 group-hover:shadow-[0_0_30px_rgba(0,230,118,0.15)] transition-all duration-300 transform group-hover:-translate-y-2">
+<svg class="w-16 h-16 text-brand-accent" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold text-white mb-2">Compose Multiplatform</h3>
+<p class="text-brand-secondary text-sm px-4">UI moderno para todas las plataformas con una única base de código.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Skills Section -->
+<!-- BEGIN: Portfolio Section -->
+<section class="py-24 bg-brand-surface/20" id="portfolio">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div>
+<span class="text-brand-accent font-bold tracking-widest uppercase text-xs">Portafolio Estratégico</span>
+<h2 class="text-4xl font-bold mt-2 text-white">Resultados Tangibles</h2>
+</div>
+<p class="text-brand-secondary max-w-md">Casos de uso reales que demuestran la capacidad técnica para entregar productos listos para el mercado.</p>
+</div>
+<div class="grid lg:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<article class="flex flex-col h-full bg-brand-surface rounded-custom overflow-hidden border border-white/5 hover:border-brand-accent/30 hover:translate-y-[-8px] transition-all hover:shadow-2xl hover:shadow-brand-accent/5">
+<div class="h-56 bg-[#0c1e3a] flex items-center justify-center p-8 border-b border-white/5">
+<img alt="KomPOS Mockup" class="rounded shadow-2xl h-4/5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDre8N4Q1m0LfmdBIzhItqzkJPzETvMMp-5yIZz4900uBVENprLvT8jaBTsGGp8ixHoBefBNKCHykVgYbTcnTe3vHXJx0BH4nJ4V8vE-1GU8S3wb6HjEw6kVlsP2XrsBeM2a9o-UvnlECZvze_hkpbZXjZSiveex5voqiqNYjJpEOD8pCBMgr1E7n6b5L_KxriwPvyfBWj14LByF3Me3W6uburyPFANAjr8A2uJ4P6bbpt4VL_uPtGFX5055QzL8oYLigBzWyNwf6NG"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-2xl font-bold mb-3 text-white">KomPOS</h3>
+<p class="text-brand-secondary text-sm mb-4 italic">Punto de Venta (POS)</p>
+<p class="text-brand-secondary mb-6 flex-grow">Digitalización integral de ventas. Automatiza tu inventario y cobros con una interfaz intuitiva y robusta.</p>
+<div class="pt-6 border-t border-white/5 flex justify-between items-center text-xs font-bold text-brand-accent uppercase tracking-tighter">
+<span>Fintech / Retail</span>
+<span class="text-brand-accent/80 hover:text-brand-accent cursor-pointer transition-colors">Case Study →</span>
+</div>
+</div>
+</article>
+<!-- Project 2 -->
+<article class="flex flex-col h-full bg-brand-surface rounded-custom overflow-hidden border border-white/5 hover:border-brand-accent/30 hover:translate-y-[-8px] transition-all hover:shadow-2xl hover:shadow-brand-accent/5">
+<div class="h-56 bg-[#0c1e3a] flex items-center justify-center p-8 border-b border-white/5">
+<img alt="KommHotel Mockup" class="rounded shadow-2xl h-4/5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOzpQ07JWjtJFUzuQymihqznyWF7DoOkgyj3kbqpPwIKIiTxGIUS86Vj6eK_8uVWfnxgEOAKbDMSb2q2UcVCvLGXJrrITNh7tdA8vFSLU2qZITdZ0ua9Gg27Ak4k9nFxeqOtj-OV8-EVfwIRVKO9GvrZclRpL_3Dey6-CeTEt7Webhn9cQCWPFTHmlCUQPdFGK0Tq-gFslDLTlNHbF1bqyx2CyHzbgorZ1iCJsikc61SxZLkCvr4cfGgI0ti6Ugbl8WPYRWQuE3g4Z"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-2xl font-bold mb-3 text-white">KommHotel</h3>
+<p class="text-brand-secondary text-sm mb-4 italic">Ecosistema Fullstack</p>
+<p class="text-brand-secondary mb-6 flex-grow">Gestión hotelera modular. Un ecosistema completo que conecta administración, reservas y atención al cliente.</p>
+<div class="pt-6 border-t border-white/5 flex justify-between items-center text-xs font-bold text-brand-accent uppercase tracking-tighter">
+<span>Hospitality / SaaS</span>
+<span class="text-brand-accent/80 hover:text-brand-accent cursor-pointer transition-colors">Case Study →</span>
+</div>
+</div>
+</article>
+<!-- Project 3 -->
+<article class="flex flex-col h-full bg-brand-surface rounded-custom overflow-hidden border border-white/5 hover:border-brand-accent/30 hover:translate-y-[-8px] transition-all hover:shadow-2xl hover:shadow-brand-accent/5">
+<div class="h-56 bg-[#0c1e3a] flex items-center justify-center p-8 border-b border-white/5">
+<img alt="Mix Calc App" class="rounded shadow-2xl h-4/5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNU6xeuvQo7vp94npmoX8j05eQI0azFG2ZaisNOSbkNWZHLHoETS8ylmUpen5EdbIcFZ_UJZsN9NL0P88rxCEfWFF3vPX07qSNARmz4N32fn9qEktWTDJL8qRyCbp-LJg_u7lLm4Nj4xPirZ4CeKdGPnRHBOyhNysJoRISK3mpREJx21sjeopQWcQUiVWO_4p0_BffLJ0WW3N6Hxum4v8ao7a3-FSh8AziAzMrsS9pMUw5yMJn-4E5QQNPd0n4fjiOpV9U3x4I7pL"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-2xl font-bold mb-3 text-white">Mix Calc</h3>
+<p class="text-brand-secondary text-sm mb-4 italic">App Publicada</p>
+<p class="text-brand-secondary mb-6 flex-grow">Precisión y utilidad real. Aplicación publicada que demuestra la capacidad de entregar productos listos para el usuario final.</p>
+<div class="pt-6 border-t border-white/5 flex justify-between items-center text-xs font-bold text-brand-accent uppercase tracking-tighter">
+<span>Tools / Utilities</span>
+<span class="text-brand-accent/80 hover:text-brand-accent cursor-pointer transition-colors">Ver en App Store →</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- END: Portfolio Section -->
+<!-- BEGIN: Trust Section -->
+<section class="py-24 bg-[#081324] border-y border-white/5 relative overflow-hidden" id="trust">
+<div class="absolute top-0 right-0 p-12 opacity-5">
+<svg fill="none" height="200" viewbox="0 0 200 200" width="200" xmlns="http://www.w3.org/2000/svg">
+<circle cx="100" cy="100" fill="#00E676" r="100"></circle>
+</svg>
+</div>
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-3xl md:text-4xl font-extrabold mb-8 leading-tight text-white">
+          "He liderado arquitecturas móviles en los entornos más exigentes de México."
+        </h2>
+<div class="flex items-center space-x-4 mb-10">
+<div class="w-16 h-1 bg-brand-accent"></div>
+<p class="text-xl font-semibold text-white">José Gregorio Hernández Trejo</p>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="p-6 bg-brand-surface rounded-custom border border-white/5">
+<p class="text-4xl font-bold text-brand-accent mb-2">20+</p>
+<p class="text-sm text-brand-secondary uppercase tracking-widest font-bold">Años de Experiencia</p>
+</div>
+<div class="p-6 bg-brand-surface rounded-custom border border-white/5">
+<p class="text-4xl font-bold text-brand-accent mb-2">KMP</p>
+<p class="text-sm text-brand-secondary uppercase tracking-widest font-bold">Especialista Certificado</p>
+</div>
+</div>
+</div>
+<div class="bg-brand-surface p-10 rounded-custom border border-white/10 shadow-2xl">
+<p class="text-brand-secondary mb-8 text-center uppercase tracking-widest text-xs font-bold">Experiencia Corporativa en:</p>
+<div class="grid grid-cols-2 gap-12 items-center grayscale invert opacity-60 hover:grayscale-0 hover:invert-0 hover:opacity-100 transition-all duration-500">
+<div class="flex justify-center" data-purpose="partner-logo">
+<img alt="Scotiabank Logo" class="max-h-10 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVcWwxTdjm7y9ZBiZVYsZvR6KmiO7cl_sdUAJoZut8GCXouJLqs5RsB-pVRPCQAAr9FJ8Hp5Xc_CtysfBlpKqmCfNI6o_LkH3VVPZrW6hEcASLnXtBnvzx0yklWhI-Ni25q2Ss7VUZv9wlUVPCeeyrmVVxN0EuvnCOmv7PTlzYCQnyHJNSDsO97p-lHI7pZt3h4VvYQS7LxO9mC80dmV5QXHQRamvZNLG619KXdQYUYKxyCIyGQawh3ZUevGcGNUN_y0czyBG3r4dY"/>
+</div>
+<div class="flex justify-center" data-purpose="partner-logo">
+<img alt="Kavak Logo" class="max-h-10 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzr_J5gzrwnD7rDtrnsFh1G8uInRJ4-Q37-izN0a8k1DY5lZ6eBB8-luGPOmNdvjcECTlMPmz23dIU1ZVbqNTyWWq0gmUEXqIoLwm37ftyQPJlIPRMNZtqCVI1nxZhsss6ueKFKOzS-TdAOgq6iNG9oQeTqeeObut2S6CDjEzIxuENDxoRr3bCN7oIQSKolEjUsWphnXZhX-y-HVkGkoHLKsQNFs4jkikVKPj8sn7z06-v8laTZciji0Oycb7cVjxCmTdx02W6J59f"/>
+</div>
+<div class="flex justify-center" data-purpose="partner-logo">
+<img alt="PagaTodo Logo" class="max-h-10 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtZbX3aDK5pGPzMNPHJ9a3hRKUgrTeiri24Bl82qHuI0Rkti2iehxEngQYo5RgqzFlbXKo9sAjuNinWeOz9RFWe06k8ZwGKFmRfM4e3TO0X_AYM5YrKtVO3DV8lxMsp_zCvCxHD_7hjH-46K8BCNQLktYSmZBAHahMkf9P3BC_fvwqwIF20eTU9JVxJWuf1kVZ3zyIjrdZExkhwgclZ4-BACyOPOjISjOphvHm4KXoFjOwPz0kN-yAw1TNG-P-bwchKJrnOHQ3UJGT"/>
+</div>
+<div class="flex justify-center" data-purpose="partner-logo">
+<img alt="Expertise Logo" class="max-h-10 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA1xDsbuE-VYcUMxsZPtn-nGpPjeI4I6enETrIumZfBdgfplDWEwa9ps-zqBN0GQtpKJtEgH5QUjSgTkc5tJW18bU80A4mcaDH-qv5F2GglPxlgjyhdXC5TdQEcRb8jzvPa0MEbhaFNR5OfQLdOsuZM_q2cfqKixPkI5Zyoyad2-m4IQ8jPB9TU2JThZowPKV7-L8u0LpzUXTXvu8jzLdZU409Qm5qAQTJMcd_W36nbhZV2H8fjG_ioxbj8YEDgAlLpsdZpVpfkUaF"/>
+</div>
+</div>
+<div class="mt-12 text-center">
+<span class="text-sm text-brand-secondary italic">Ingeniero en Sistemas enfocado en soluciones escalables.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Trust Section -->
+<!-- BEGIN: Contact Section -->
+<section class="py-24 relative overflow-hidden bg-brand-dark" id="contact">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-white">¿Listo para llevar tu negocio al siguiente nivel digital?</h2>
+<p class="text-xl text-brand-secondary mb-12">Hablemos de tu proyecto en Querétaro y cómo la tecnología de vanguardia puede potenciar tus resultados.</p>
+<div class="bg-brand-surface p-8 md:p-12 rounded-custom border border-white/10 shadow-2xl text-left" data-purpose="contact-form-container">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block text-sm font-medium text-brand-secondary" for="name">Nombre</label>
+<input class="w-full bg-[#081324] border-white/10 rounded-custom text-white placeholder:text-slate-500 focus:ring-brand-accent focus:border-brand-accent py-3 px-4 transition-all" id="name" name="name" placeholder="Tu nombre" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-medium text-brand-secondary" for="email">Email</label>
+<input class="w-full bg-[#081324] border-white/10 rounded-custom text-white placeholder:text-slate-500 focus:ring-brand-accent focus:border-brand-accent py-3 px-4 transition-all" id="email" name="email" placeholder="tu@email.com" type="email"/>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="block text-sm font-medium text-brand-secondary" for="message">Tu Proyecto</label>
+<textarea class="w-full bg-[#081324] border-white/10 rounded-custom text-white placeholder:text-slate-500 focus:ring-brand-accent focus:border-brand-accent py-3 px-4 transition-all" id="message" name="message" placeholder="Cuéntame brevemente qué necesitas digitalizar..." rows="4"></textarea>
+</div>
+<div class="md:col-span-2">
+<button class="w-full py-4 bg-brand-accent hover:bg-[#00c853] rounded-custom font-bold text-lg text-black transition-all shadow-lg shadow-brand-accent/20 active:scale-[0.98]" type="submit">
+            Enviar Mensaje y Agendar Consulta
+          </button>
+</div>
+</form>
+</div>
+<div class="mt-12 flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-12">
+<div class="flex items-center space-x-3 group cursor-pointer">
+<div class="w-10 h-10 rounded-full bg-brand-accent/10 flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-black transition-all">
+<svg class="h-5 w-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+</svg>
+</div>
+<span class="text-brand-secondary group-hover:text-brand-accent transition-colors">contacto@jghernandez.tech</span>
+</div>
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 rounded-full bg-brand-accent/10 flex items-center justify-center text-brand-accent">
+<svg class="h-5 w-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-brand-secondary">Querétaro, México</span>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Contact Section -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="py-12 border-t border-white/5 bg-[#081324]">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-brand-secondary">
+<div class="mb-4 md:mb-0">
+      © 2023 José Gregorio Hernández Trejo. Todos los derechos reservados.
+    </div>
+<div class="flex space-x-8">
+<a class="hover:text-brand-accent transition-colors" href="#">LinkedIn</a>
+<a class="hover:text-brand-accent transition-colors" href="#">GitHub</a>
+<a class="hover:text-brand-accent transition-colors" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+</body></html>

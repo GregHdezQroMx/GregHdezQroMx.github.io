@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills | I.S.C. José Gregorio Hernández Trejo</title>
+  <meta name="description" content="Technical skills of I.S.C. José Gregorio Hernández Trejo: Kotlin Multiplatform, Android Native, Compose Multiplatform and fullstack architectures." />
+  <meta name="keywords" content="Kotlin, Android, Compose, Ktor, Fullstack, PYMES, Consulting" />
+  <meta name="author" content="I.S.C. José Gregorio Hernández Trejo" />
+  <meta name="theme-color" content="#0A192F" />
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#0A192F',
+              accent: '#00E676',
+              secondary: '#8892B0',
+              surface: '#112240',
+              lighter: '#233554',
+            }
+          },
+          borderRadius: {
+            'custom': '8px',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="bg-brand-dark text-slate-200 font-sans selection:bg-brand-accent selection:text-black overflow-x-hidden">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 glass-effect" role="navigation" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="assets/Foto_perfil_new.jpg" alt="Foto de perfil de I.S.C. José Gregorio Hernández Trejo" class="w-16 h-16 rounded-full border border-brand-accent shadow-sm ring-4 ring-brand-accent/40 object-cover" />
+        <span class="font-bold text-lg tracking-tight hidden sm:block text-white">I.S.C. José Gregorio Hernández Trejo</span>
+      </div>
+      <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wider text-brand-secondary">
+        <a href="index.en.html" class="hover:text-brand-accent transition-colors normal-case">Home</a>
+        <a href="tecnologia.en.html" class="hover:text-brand-accent transition-colors normal-case">Technology</a>
+        <a href="habilidades.en.html" class="hover:text-brand-accent transition-colors normal-case">Skills</a>
+        <a href="portfolio.en.html" class="hover:text-brand-accent transition-colors normal-case">Portfolio</a>
+        <a href="experiencia.en.html" class="hover:text-brand-accent transition-colors normal-case">Experience</a>
+      </div>
+      <div class="flex items-center space-x-2 text-xs">
+        <a href="habilidades.html" class="text-brand-secondary hover:text-brand-accent">ES</a>
+        <span class="text-brand-secondary">|</span>
+        <a href="habilidades.en.html" class="text-brand-secondary hover:text-brand-accent">EN</a>
+      </div>
+      <a href="contacto.en.html" class="bg-brand-accent hover:bg-[#00c853] text-black px-6 py-2.5 rounded-custom font-semibold transition-all shadow-lg shadow-brand-accent/20 active:scale-95">
+        Contact
+      </a>
+    </div>
+  </nav>
+
+  <main class="pt-20">
+    <section class="py-24 bg-brand-dark overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <span class="text-brand-accent font-bold tracking-widest uppercase text-xs">Technical Expertise</span>
+          <h1 class="text-4xl font-bold mt-2 text-white">Key Skills</h1>
+          <p class="text-brand-secondary mt-4 max-w-2xl mx-auto">
+            Technologies and patterns that power solid, scalable solutions aligned with PYME needs.
+          </p>
+        </div>
+
+        <div class="grid gap-12 md:grid-cols-3">
+          <!-- CMP Skill -->
+          <div class="flex flex-col items-center text-center group">
+            <div class="w-32 h-32 mb-8 bg-brand-surface rounded-2xl flex items-center justify-center border border-white/5 group-hover:border-brand-accent/50 group-hover:shadow-[0_0_30px_rgba(0,230,118,0.15)] transition-all duration-300 transform group-hover:-translate-y-2">
+              <img alt="Compose Multiplatform" class="w-20 h-20" src="assets/logo_cmp.webp" />
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Compose Multiplatform (CMP)</h3>
+            <p class="text-brand-secondary text-sm px-4">Certified in building UI + logic once, delivering native experience on Android, iOS, Web and Desktop.</p>
+          </div>
+
+          <!-- Android Skill -->
+          <div class="flex flex-col items-center text-center group">
+            <div class="w-32 h-32 mb-8 bg-brand-surface rounded-2xl flex items-center justify-center border border-white/5 group-hover:border-brand-accent/50 group-hover:shadow-[0_0_30px_rgba(0,230,118,0.15)] transition-all duration-300 transform group-hover:-translate-y-2">
+              <img alt="Android Development" class="w-20 h-20" src="assets/logo_android.webp" />
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Android Native</h3>
+            <p class="text-brand-secondary text-sm px-4">6+ years building native Android apps with scalable architectures; Jetpack Compose is part of the toolkit when it fits.</p>
+          </div>
+
+          <!-- Fullstack Skill -->
+          <div class="flex flex-col items-center text-center group">
+            <div class="w-32 h-32 mb-8 bg-brand-surface rounded-2xl flex items-center justify-center border border-white/5 group-hover:border-brand-accent/50 group-hover:shadow-[0_0_30px_rgba(0,230,118,0.15)] transition-all duration-300 transform group-hover:-translate-y-2">
+              <img alt="Fullstack Kotlin" class="w-20 h-20" src="assets/logo_full_kotlin.webp" />
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Fullstack Modern</h3>
+            <p class="text-brand-secondary text-sm px-4">End-to-end architectures with Ktor backend and Compose Multiplatform UI for scalable solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-12 border-t border-white/5 bg-[#081324]">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-brand-secondary">
+      <div class="mb-4 md:mb-0">
+        © 2026 I.S.C. José Gregorio Hernández Trejo. Software Consulting & Digital Transformation.
+      </div>
+      <div class="flex space-x-8">
+        <a href="https://www.linkedin.com/in/greg-hernandez-android-dev/" target="_blank" class="hover:text-brand-accent transition-colors normal-case">LinkedIn</a>
+        <a href="#" class="hover:text-brand-accent transition-colors normal-case">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

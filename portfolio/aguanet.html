@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Study: AguaNet | I.S.C. José Gregorio Hernández Trejo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: { sans: ['Inter', 'sans-serif'] },
+              colors: {
+                brand: { dark: '#0A192F', accent: '#00E676', secondary: '#8892B0', surface: '#112240', lighter: '#233554' }
+              },
+              borderRadius: { 'custom': '8px' }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-slate-200 font-sans selection:bg-brand-accent selection:text-black overflow-x-hidden">
+
+<nav class="fixed top-0 w-full z-50 bg-brand-dark/80 backdrop-blur-md border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <img src="../assets/Foto_perfil_new.jpg" alt="Logo" class="w-12 h-12 rounded-full border border-brand-accent shadow-sm object-cover" />
+            <span class="font-bold text-white hidden sm:block">I.S.C. José Gregorio Hernández Trejo</span>
+        </div>
+        <div class="flex items-center space-x-6 text-xs">
+            <a href="../portfolio.html" class="text-brand-secondary hover:text-brand-accent transition-colors">Portafolio</a>
+            <div class="flex items-center space-x-2 border-l border-white/10 pl-6">
+                <a href="aguanet.html" class="text-brand-accent font-bold">ES</a>
+                <span class="text-brand-secondary">|</span>
+                <a href="aguanet.en.html" class="text-brand-secondary">EN</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="pt-32 pb-24">
+    <section class="max-w-6xl mx-auto px-6">
+        <div class="mb-16">
+            <a href="../portfolio.html" class="text-brand-accent text-sm font-bold uppercase tracking-widest hover:opacity-80 transition-opacity">← Volver al Portafolio</a>
+            <h1 class="text-4xl md:text-6xl font-extrabold mt-6 text-white tracking-tight">AguaNet: Gestión de Recursos Hídricos</h1>
+            <p class="text-brand-secondary mt-4 text-xl italic font-light">Sistema de Control y Facturación para Organismos Operadores</p>
+        </div>
+
+        <!-- SECCIÓN DESTACADA: MANTENIMIENTO (FORMATO HORIZONTAL TABLET/DESKTOP) -->
+        <article class="mb-24">
+            <div class="bg-brand-surface rounded-[2rem] p-4 md:p-8 border border-white/5 shadow-2xl overflow-hidden mb-12">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-accent/20 to-transparent rounded-2xl blur opacity-25"></div>
+                    <img src="../assets/portfolio/aguanet/6.jpg" alt="AguaNet Main Interface" class="relative rounded-xl shadow-2xl w-full object-cover">
+                </div>
+            </div>
+            <div class="max-w-3xl">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Administración Centralizada</h2>
+                <p class="text-xl md:text-2xl text-slate-400 font-medium leading-relaxed mb-6">
+                    Optimizado para estaciones de trabajo y tablets de escritorio en entornos administrativos de alto flujo.
+                </p>
+                <p class="text-brand-secondary text-lg leading-relaxed">
+                    El módulo de mantenimiento permite una configuración exhaustiva del padrón de usuarios, catálogos geográficos y parámetros de facturación, garantizando la integridad de los datos en sistemas de misión crítica.
+                </p>
+            </div>
+        </article>
+
+        <!-- CONTENIDO DETALLADO -->
+        <div class="grid lg:grid-cols-3 gap-16">
+            <div class="lg:col-span-2 space-y-16">
+                <section>
+                    <h3 class="text-2xl font-bold mb-6 text-white flex items-center">
+                        <span class="w-8 h-px bg-brand-accent mr-4"></span>Síntesis del Proyecto
+                    </h3>
+                    <p class="text-lg text-slate-300 leading-relaxed">
+                        AguaNet es una solución integral diseñada para digitalizar la operación completa de organismos de agua potable. Desde la gestión de medidores hasta la recaudación en ventanilla, el sistema reduce drásticamente los tiempos de respuesta y errores operativos.
+                    </p>
+                </section>
+
+                <section>
+                    <h3 class="text-2xl font-bold mb-8 text-white">Profundidad del Sistema</h3>
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div class="space-y-4">
+                            <div class="aspect-video overflow-hidden rounded-xl border border-white/10 bg-brand-surface p-2">
+                                <img src="../assets/portfolio/aguanet/2.jpg" alt="Operación" class="rounded shadow-md w-full h-full object-cover">
+                            </div>
+                            <h4 class="text-white font-bold text-lg">Control Operativo</h4>
+                            <p class="text-brand-secondary text-sm">Gestión de lecturas y anomalías para una facturación precisa.</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="aspect-video overflow-hidden rounded-xl border border-white/10 bg-brand-surface p-2">
+                                <img src="../assets/portfolio/aguanet/3.jpg" alt="Finanzas" class="rounded shadow-md w-full h-full object-cover">
+                            </div>
+                            <h4 class="text-white font-bold text-lg">Módulo de Caja</h4>
+                            <p class="text-brand-secondary text-sm">Recaudación multicanal con reportes de corte diario y conciliación.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="space-y-8">
+                <div class="bg-brand-surface/50 p-8 rounded-2xl border border-white/5 backdrop-blur-sm">
+                    <h4 class="text-xs text-brand-accent font-bold uppercase tracking-[0.2em] mb-6">Stack & Capacidades</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-sm text-slate-300">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full mr-3"></span>Visual Basic .NET
+                        </li>
+                        <li class="flex items-center text-sm text-slate-300">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full mr-3"></span>SQL Server Express
+                        </li>
+                        <li class="flex items-center text-sm text-slate-300">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full mr-3"></span>Crystal Reports
+                        </li>
+                        <li class="flex items-center text-sm text-slate-300">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full mr-3"></span>ActiveX
+                        </li>
+                        <li class="pt-4 flex items-center text-sm text-slate-300 border-t border-white/5">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full mr-3"></span>Facturación del padrón de usuarios
+                        </li>
+                        <li class="flex items-center text-sm text-slate-300">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full mr-3"></span>Módulo de recaudación en ventanilla
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<footer class="py-12 border-t border-white/5 text-center text-sm text-brand-secondary">
+    <p>© 2026 I.S.C. José Gregorio Hernández Trejo.</p>
+</footer>
+
+</body>
+</html>

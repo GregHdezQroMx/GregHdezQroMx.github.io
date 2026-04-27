@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Study: KommHotel | I.S.C. José Gregorio Hernández Trejo</title>
+    <meta name="description" content="Detalle del proyecto KommHotel - Plataforma integral de gestión hotelera y reservas." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: { sans: ['Inter', 'sans-serif'] },
+              colors: {
+                brand: {
+                  dark: '#0A192F',
+                  accent: '#00E676',
+                  secondary: '#8892B0',
+                  surface: '#112240',
+                  lighter: '#233554',
+                }
+              },
+              borderRadius: { 'custom': '8px' }
+            }
+          }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-dark text-slate-200 font-sans selection:bg-brand-accent selection:text-black overflow-x-hidden">
+
+<nav class="fixed top-0 w-full z-50 bg-brand-dark/80 backdrop-blur-md border-b border-white/5" role="navigation">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <img src="../assets/Foto_perfil_new.jpg" alt="Foto de perfil" class="w-16 h-16 rounded-full border border-brand-accent shadow-sm ring-4 ring-brand-accent/40 object-cover" />
+            <span class="font-bold text-lg tracking-tight hidden sm:block text-white">I.S.C. José Gregorio Hernández Trejo</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider text-brand-secondary">
+            <a href="../index.html" class="hover:text-brand-accent transition-colors">Inicio</a>
+            <a href="../tecnologia.html" class="hover:text-brand-accent transition-colors">Tecnología</a>
+            <a href="../habilidades.html" class="hover:text-brand-accent transition-colors">Habilidades</a>
+            <a href="../portfolio.html" class="hover:text-brand-accent transition-colors text-brand-accent">Portafolio</a>
+            <a href="../experiencia.html" class="hover:text-brand-accent transition-colors">Experiencia</a>
+        </div>
+        <div class="flex items-center space-x-2 text-xs">
+            <a href="kommhotel.html" class="text-brand-accent font-bold">ES</a>
+            <span class="text-brand-secondary">|</span>
+            <a href="kommhotel.en.html" class="text-brand-secondary hover:text-brand-accent">EN</a>
+        </div>
+        <a href="../contacto.html" class="bg-brand-accent hover:bg-[#00c853] text-black px-6 py-2.5 rounded-custom font-semibold transition-all shadow-lg shadow-brand-accent/20 active:scale-95">
+            Contacto
+        </a>
+    </div>
+</nav>
+
+<main class="pt-32 pb-24">
+    <section class="max-w-5xl mx-auto px-6">
+
+        <div class="mb-16">
+            <a href="../portfolio.html" class="text-brand-accent text-sm font-bold uppercase tracking-widest hover:opacity-80 transition-opacity">← Volver al Portafolio</a>
+            <h1 class="text-4xl md:text-5xl font-bold mt-6 text-white">KommHotel: Gestión Hotelera 360°</h1>
+            <p class="text-brand-secondary mt-4 text-lg italic">Ecosistema Fullstack - Hospitality & SaaS</p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-12">
+            <div class="lg:col-span-2 space-y-12">
+
+                <article class="bg-brand-surface p-8 rounded-custom border border-white/5 shadow-xl">
+                    <h2 class="text-2xl font-bold mb-6 text-white border-b border-brand-accent/20 pb-2">Síntesis del Proyecto</h2>
+                    <p class="leading-relaxed text-slate-300">
+                        KommHotel es una plataforma integral de gestión y reservas desarrollada con <strong>Compose Multiplatform (CMP)</strong>, diseñada para ofrecer "Sofisticación Funcional". La solución es nativa y adaptativa para Smartphones, Tablets así como Desktop y Dashboard Web, siguiendo las mejores prácticas de Clean Architecture y diseño Material 3.
+                    </p>
+                    <p class="mt-4 leading-relaxed text-slate-300">
+                        El ecosistema abarca desde la experiencia del huésped hasta la administración operativa compleja, integrando motores de tareas en tiempo real, flujos de check-in digital y módulos financieros robustos.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 class="text-2xl font-bold mb-6 text-white">Demostración en Video</h2>
+
+                    <div class="space-y-12">
+                        <!-- Video 1: Cambio de Branding -->
+                        <div class="group">
+                            <h3 class="text-lg font-semibold mb-3 text-brand-accent">Identidad Dinámica: Cambio de Branding</h3>
+                            <div class="overflow-hidden rounded-custom border border-white/10 bg-black">
+                                <video controls class="w-full h-auto shadow-2xl">
+                                    <source src="../assets/portfolio/kommhotel/Cambio de Branding.mov" type="video/mp4">
+                                    Tu navegador no soporta el elemento de video.
+                                </video>
+                            </div>
+                            <p class="mt-4 text-sm text-brand-secondary">
+                                Muestra la capacidad del sistema para adaptar su identidad visual de forma dinámica, manteniendo la coherencia de marca en todos los puntos de contacto.
+                            </p>
+                        </div>
+
+                        <!-- Video 2: Flujo de reservación -->
+                        <div class="group">
+                            <h3 class="text-lg font-semibold mb-3 text-brand-accent">Experiencia del Huésped: Flujo de Reservación</h3>
+                            <div class="overflow-hidden rounded-custom border border-white/10 bg-black">
+                                <video controls class="w-full h-auto shadow-2xl">
+                                    <source src="../assets/portfolio/kommhotel/Flujo de reservación.mov" type="video/mp4">
+                                    Tu navegador no soporta el elemento de video.
+                                </video>
+                            </div>
+                            <p class="mt-4 text-sm text-brand-secondary">
+                                Recorrido completo del proceso de reserva, desde la selección de fechas y habitaciones hasta la confirmación, optimizado para conversión y facilidad de uso.
+                            </p>
+                        </div>
+
+                        <!-- Video 3: Solicitud servicio de conserje -->
+                        <div class="group">
+                            <h3 class="text-lg font-semibold mb-3 text-brand-accent">Operación en Tiempo Real: Servicio de Conserje</h3>
+                            <div class="overflow-hidden rounded-custom border border-white/10 bg-black">
+                                <video controls class="w-full h-auto shadow-2xl">
+                                    <source src="../assets/portfolio/kommhotel/Solicitud servicio de conserje.mov" type="video/mp4">
+                                    Tu navegador no soporta el elemento de video.
+                                </video>
+                            </div>
+                            <p class="mt-4 text-sm text-brand-secondary">
+                                Interacción entre el huésped y el personal del hotel, gestionando solicitudes de servicio que se sincronizan instantáneamente con el motor de tareas del Staff.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <h2 class="text-2xl font-bold mb-4 text-white">Logros Técnicos</h2>
+                    <ul class="list-disc list-inside text-brand-secondary space-y-2">
+                        <li>Branding adaptativo de Marca blanca (Logo, nombre y temas de colores).</li>
+                        <li>Implementación de <strong>SSE (Server-Sent Events)</strong> para sincronización instantánea.</li>
+                        <li>Motor de tareas inteligente con auto-asignación basada en carga de trabajo.</li>
+                        <li>Integración completa de pagos mediante <strong>Stripe (Native UI + Webhooks)</strong>.</li>
+                        <li>Arquitectura multi-rol: Huésped, Staff, Manager y Sistema.</li>
+                        <li>Dashboard de Inteligencia con métricas de rendimiento y auditoría visual en tiempo real.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <aside class="space-y-8">
+                <div class="bg-brand-surface p-6 rounded-custom border border-white/5">
+                    <h3 class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-4">Tech Stack</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">Kotlin Multiplatform</span>
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">Compose Multiplatform</span>
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">Ktor Server</span>
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">PostgreSQL</span>
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">Stripe API</span>
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">Coroutines</span>
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">Koin DI</span>
+                    </div>
+                </div>
+
+                <div class="bg-brand-surface p-6 rounded-custom border border-white/5">
+                    <h3 class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-4">Roles de Usuario</h3>
+                    <ul class="text-sm text-brand-secondary space-y-3">
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full"></span>
+                            <span><strong>Huésped:</strong> Reservas y servicios.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full"></span>
+                            <span><strong>Staff:</strong> Ejecución de tareas operativas.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full"></span>
+                            <span><strong>Manager:</strong> Métricas y administración.</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<footer class="py-12 border-t border-white/5 bg-[#081324]">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-brand-secondary">
+        <div>© 2026 I.S.C. José Gregorio Hernández Trejo.</div>
+        <div class="flex space-x-8 mt-4 md:mt-0">
+            <a href="https://www.linkedin.com/in/greg-hernandez-android-dev/" target="_blank" class="hover:text-brand-accent transition-colors">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

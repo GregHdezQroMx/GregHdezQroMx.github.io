@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Study: KommPOS | I.S.C. José Gregorio Hernández Trejo</title>
+    <meta name="description" content="Detalle del proyecto KommPOS - Sistema Punto de Venta (POS) desarrollado con Compose Multiplatform." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: { sans: ['Inter', 'sans-serif'] },
+              colors: {
+                brand: {
+                  dark: '#0A192F',
+                  accent: '#00E676',
+                  secondary: '#8892B0',
+                  surface: '#112240',
+                  lighter: '#233554',
+                }
+              },
+              borderRadius: { 'custom': '8px' }
+            }
+          }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-dark text-slate-200 font-sans selection:bg-brand-accent selection:text-black overflow-x-hidden">
+
+<nav class="fixed top-0 w-full z-50 bg-brand-dark/80 backdrop-blur-md border-b border-white/5" role="navigation">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <img src="../assets/Foto_perfil_new.jpg" alt="Foto de perfil" class="w-16 h-16 rounded-full border border-brand-accent shadow-sm ring-4 ring-brand-accent/40 object-cover" />
+            <span class="font-bold text-lg tracking-tight hidden sm:block text-white">I.S.C. José Gregorio Hernández Trejo</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider text-brand-secondary">
+            <a href="../index.html" class="hover:text-brand-accent transition-colors">Inicio</a>
+            <a href="../tecnologia.html" class="hover:text-brand-accent transition-colors">Tecnología</a>
+            <a href="../habilidades.html" class="hover:text-brand-accent transition-colors">Habilidades</a>
+            <a href="../portfolio.html" class="hover:text-brand-accent transition-colors text-brand-accent">Portafolio</a>
+            <a href="../experiencia.html" class="hover:text-brand-accent transition-colors">Experiencia</a>
+        </div>
+        <div class="flex items-center space-x-2 text-xs">
+            <a href="kommpos.html" class="text-brand-accent font-bold">ES</a>
+            <span class="text-brand-secondary">|</span>
+            <a href="kommpos.en.html" class="text-brand-secondary hover:text-brand-accent">EN</a>
+        </div>
+        <a href="../contacto.html" class="bg-brand-accent hover:bg-[#00c853] text-black px-6 py-2.5 rounded-custom font-semibold transition-all shadow-lg shadow-brand-accent/20 active:scale-95">
+            Contacto
+        </a>
+    </div>
+</nav>
+
+<main class="pt-32 pb-24">
+    <section class="max-w-5xl mx-auto px-6">
+
+        <div class="mb-16">
+            <a href="../portfolio.html" class="text-brand-accent text-sm font-bold uppercase tracking-widest hover:opacity-80 transition-opacity">← Volver al Portafolio</a>
+            <h1 class="text-4xl md:text-5xl font-bold mt-6 text-white tracking-tight">KommPOS</h1>
+            <p class="text-brand-secondary mt-4 text-lg italic">Compose Multiplataforma</p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-12">
+            <div class="lg:col-span-2 space-y-12">
+
+                <article class="bg-brand-surface p-8 rounded-custom border border-white/5 shadow-xl">
+                    <h2 class="text-2xl font-bold mb-6 text-white border-b border-brand-accent/20 pb-2">Síntesis del Proyecto</h2>
+                    <p class="leading-relaxed text-slate-300">
+                        KommPOS es una solución POS de alto rendimiento que unifica la experiencia de usuario mediante <strong>Compose Multiplatform</strong>. Al compartir el 100% de la lógica de negocio y la interfaz entre plataformas, garantizamos una evolución ágil y una estabilidad superior en entornos de alta demanda.
+                    </p>
+                    <p class="mt-4 leading-relaxed text-slate-300">
+                        El sistema está diseñado específicamente para soportar <strong>formato horizontal en Tabletas y Desktop</strong>, maximizando la productividad operativa. Esta disposición permite un flujo de venta continuo donde el catálogo y el ticket conviven en armonía visual.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 class="text-2xl font-bold mb-6 text-white">Visualización del Sistema</h2>
+
+                    <!-- Destacado Horizontal -->
+                    <div class="mb-8 bg-brand-surface rounded-xl p-4 border border-white/5 shadow-2xl">
+                         <div class="max-w-md mx-auto rounded-lg overflow-hidden border border-white/10">
+                            <img src="../assets/portfolio/kommpos/Screenshot_20260421_170457.png" alt="Vista en Tablet Horizontal" class="w-full h-auto">
+                        </div>
+                    </div>
+
+                    <!-- Galería de Interfaz -->
+                    <div class="space-y-8">
+                        <div>
+                            <h4 class="text-brand-accent text-xs font-bold uppercase tracking-widest mb-4">Formatos Horizontales (Tablet / Desktop)</h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <img src="../assets/portfolio/kommpos/Screenshot_20260421_170636.png" alt="Desktop View 1" class="rounded border border-white/10 shadow-lg w-full h-auto">
+                                <img src="../assets/portfolio/kommpos/Screenshot_20260421_170829.png" alt="Desktop View 2" class="rounded border border-white/10 shadow-lg w-full h-auto">
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-brand-accent text-xs font-bold uppercase tracking-widest mb-4">Formatos Verticales (Móvil)</h4>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                                <img src="../assets/portfolio/kommpos/Screenshot_20260420_003150.png" alt="Mobile View 1" class="rounded border border-white/10 shadow-lg w-full h-auto">
+                                <img src="../assets/portfolio/kommpos/Screenshot_20260421_170515.png" alt="Mobile View 2" class="rounded border border-white/10 shadow-lg w-full h-auto">
+                                <img src="../assets/portfolio/kommpos/Screenshot_20260421_170538.png" alt="Mobile View 3" class="rounded border border-white/10 shadow-lg w-full h-auto">
+                                <img src="../assets/portfolio/kommpos/Screenshot_20260421_170557.png" alt="Mobile View 4" class="rounded border border-white/10 shadow-lg w-full h-auto">
+                                <img src="../assets/portfolio/kommpos/Screenshot_20260421_170737.png" alt="Mobile View 5" class="rounded border border-white/10 shadow-lg w-full h-auto">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <h2 class="text-2xl font-bold mb-4 text-white">Logros Técnicos</h2>
+                    <ul class="list-disc list-inside text-brand-secondary space-y-2">
+                        <li>Arquitectura Multiplataforma con 100% de lógica compartida.</li>
+                        <li>Sincronización en tiempo real mediante Ktor Server y SSE (Server-Sent Events).</li>
+                        <li>Persistencia local robusta con SQLDelight (Offline-first).</li>
+                        <li>Integración de pagos globales con Stripe API SDK.</li>
+                        <li>Interfaz reactiva y declarativa optimizada para múltiples pantallas.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <aside class="space-y-8">
+                <div class="bg-brand-surface p-6 rounded-custom border border-white/5 shadow-xl">
+                    <h3 class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-4">Tech Stack</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">Compose Multiplatform</span>
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">Ktor Server</span>
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">PostgreSQL</span>
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">SQLDelight</span>
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">Stripe API</span>
+                    </div>
+                </div>
+
+                <div class="bg-brand-surface p-6 rounded-custom border border-white/5 shadow-xl">
+                    <h3 class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-4">Módulos Clave</h3>
+                    <ul class="text-sm text-brand-secondary space-y-3">
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full"></span>
+                            <span>Venta de mostrador ágil.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full"></span>
+                            <span>Gestión de Catálogo e Inventario.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full"></span>
+                            <span>Reportes y Business Intelligence.</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<footer class="py-12 border-t border-white/5 bg-[#081324]">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-brand-secondary">
+        <div>© 2026 I.S.C. José Gregorio Hernández Trejo.</div>
+        <div class="flex space-x-8 mt-4 md:mt-0">
+            <a href="https://www.linkedin.com/in/greg-hernandez-android-dev/" target="_blank" class="hover:text-brand-accent transition-colors">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

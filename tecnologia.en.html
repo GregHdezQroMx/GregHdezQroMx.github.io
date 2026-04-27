@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technology | I.S.C. José Gregorio Hernández Trejo</title>
+  <meta name="description" content="Kotlin Multiplatform (KMP) for PYMES: cost savings, faster time-to-market and native experience on Android, iOS and Web." />
+  <meta name="keywords" content="Kotlin Multiplatform, KMP, PYMES, Android, iOS, Web, consulting" />
+  <meta name="author" content="I.S.C. José Gregorio Hernández Trejo" />
+  <meta name="theme-color" content="#0A192F" />
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#0A192F',
+              accent: '#00E676',
+              secondary: '#8892B0',
+              surface: '#112240',
+              lighter: '#233554',
+            }
+          },
+          borderRadius: {
+            'custom': '8px',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="bg-brand-dark text-slate-200 font-sans selection:bg-brand-accent selection:text-black overflow-x-hidden">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 glass-effect" role="navigation" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="assets/Foto_perfil_new.jpg" alt="Foto de perfil de I.S.C. José Gregorio Hernández Trejo" class="w-16 h-16 rounded-full border border-brand-accent shadow-sm ring-4 ring-brand-accent/40 object-cover" />
+        <span class="font-bold text-lg tracking-tight hidden sm:block text-white">I.S.C. José Gregorio Hernández Trejo</span>
+      </div>
+      <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wider text-brand-secondary">
+        <a href="index.en.html" class="hover:text-brand-accent transition-colors normal-case">Home</a>
+        <a href="tecnologia.en.html" class="hover:text-brand-accent transition-colors normal-case">Technology</a>
+        <a href="habilidades.en.html" class="hover:text-brand-accent transition-colors normal-case">Skills</a>
+        <a href="portfolio.en.html" class="hover:text-brand-accent transition-colors normal-case">Portfolio</a>
+        <a href="experiencia.en.html" class="hover:text-brand-accent transition-colors normal-case">Experience</a>
+      </div>
+      <div class="flex items-center space-x-2 text-xs">
+        <a href="tecnologia.html" class="text-brand-secondary hover:text-brand-accent">ES</a>
+        <span class="text-brand-secondary">|</span>
+        <a href="tecnologia.en.html" class="text-brand-secondary hover:text-brand-accent">EN</a>
+      </div>
+      <a href="contacto.en.html" class="bg-brand-accent hover:bg-[#00c853] text-black px-6 py-2.5 rounded-custom font-semibold transition-all shadow-lg shadow-brand-accent/20 active:scale-95">
+        Contact
+      </a>
+    </div>
+  </nav>
+
+  <main class="pt-20">
+    <section class="py-24 bg-brand-surface/40 border-y border-white/5">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">Compose Multiplatform (CMP) for PYMES</h1>
+          <p class="text-lg text-brand-secondary">
+            Compose Multiplatform (CMP) lets you build UI + business logic once, then ship truly native apps on Android, iOS, Web and Desktop with a unified interface and consistent experience.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="p-8 rounded-custom bg-brand-surface border border-white/5 hover:border-brand-accent/50 transition-all group" data-purpose="benefit-card">
+            <div class="w-14 h-14 bg-brand-accent/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/20 transition-colors">
+              <svg class="h-8 w-8 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-white">40% Cost Savings</h3>
+            <p class="text-brand-secondary">
+              Reduce maintenance spend by centralizing logic, validation and rules in a single codebase.
+            </p>
+          </div>
+
+          <div class="p-8 rounded-custom bg-brand-surface border border-white/5 hover:border-brand-accent/50 transition-all group" data-purpose="benefit-card">
+            <div class="w-14 h-14 bg-brand-accent/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/20 transition-colors">
+              <svg class="h-8 w-8 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-white">Faster Time-to-Market</h3>
+            <p class="text-brand-secondary">
+              Launch Android, iOS, Web and Desktop simultaneously without waiting months between platforms.
+            </p>
+          </div>
+
+          <div class="p-8 rounded-custom bg-brand-surface border border-white/5 hover:border-brand-accent/50 transition-all group" data-purpose="benefit-card">
+            <div class="w-14 h-14 bg-brand-accent/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/20 transition-colors">
+              <svg class="h-8 w-8 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-white">100% Native Experience</h3>
+            <p class="text-brand-secondary">
+              Native UI on every platform, without compromising performance or UX.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-16 flex justify-center items-center space-x-12 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+          <img alt="Android" class="h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBq9hy1I5_HTZj9XVM-BOdQ5eqLhsj67aSN7VmzmnYflU7MckY6GePGwsUKRoEtBh3JZsMHamcAEdTM_-2schPr8_HAZLhN2IT_QGY2MQVF6FwRuQTl4RAiz_9QmaNoUrMb-ypexFMJaTDtv8p47JMiDroBzBFIxUoy2IaalG7sM_koAHK-uurVlFxhIjEjGgcNmNDOL3V-A6hJxhPXK5pmAtD-HIhwIlbCAHTH685m6OXLxXV7pC0l5N2ecluO4cvTWBLW7GcCYMw1" />
+          <img alt="iOS" class="h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWWyGyU_gUMSaoD-zHk2Dn8F9vBmDEvsEcMzp4dX_RId2WtOv78G6Qko6Je_uP0cNsJWMxx_xmSfjvKPztUVu4qoAu4P82jeCD4IvhIYQavKWamzRmrQ6XTeurTTufN3H3RgAzkAk578pSh0c4J570_-tCk8ODXYrNzWhSurWf5U_HKUN2pJ3kI3MoSLd-_w_wCCHJfz8RNNpNvyDYrb2FzSyQPV62XXntwT03dEOTON9j9F5x2R8-xnncRrlgJMWhRg8GBvcrI_bw" />
+          <img alt="Web" class="h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTYe30qfmqSpMO3zwCPEU2cxqLhxxZbyNZAFIO-HrGVnkTxKGtbgpYBz7D4z5YWtnKVKdeFIFfTs21vzQJugyexbBNqA0QPusPq7ZCAm3fwZQBg457my7Pyimbxle3OWxGxzIlsaJ6rVJpNsLqVLEwhjsXezyLaAzNkaqrRSv1X5HfYXnh28ZXCaGeiKdyamLXQ9v5B34fHdNAfuRQCvKxHXj_rxGlCjKJYgxFhWKEwg2uug7gFhBy3T7NbZToP7gpcOZyRjoveKCC" />
+          <img alt="Kotlin" class="h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0qUN7usjUydQjrj__UPBKmPy52mnmH0H2LngvPOJp_tA899ihbsIaYB_tKWd3itDX-TWIXkjL00pwfyEUontuvIxF3NO4gCxYKSqi9u-eVGpqbXLJvttNw91FB8JeFOFilkvoqT49980FvgMdT_STLbe97UX615gCzmK5-qyxt_WpmAL9Wm0kCM-tMk_Hm3Eqnx_myhLVD0oSaZEwApj3DX4PE6cMe75PFCc6vArqOlKl7oJZd8DI-mG8tUyIedSqliUypJiU2vQo" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-12 border-t border-white/5 bg-[#081324]">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-brand-secondary">
+      <div class="mb-4 md:mb-0">
+        © 2026 I.S.C. José Gregorio Hernández Trejo. Consultoría de Software & Transformación Digital.
+      </div>
+      <div class="flex space-x-8">
+        <a href="#" class="hover:text-brand-accent transition-colors normal-case">LinkedIn</a>
+        <a href="#" class="hover:text-brand-accent transition-colors normal-case">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

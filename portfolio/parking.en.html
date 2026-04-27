@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Study: Parking System | I.S.C. José Gregorio Hernández Trejo</title>
+    <meta name="description" content="Parking Management project detail - System for controlling entries, exits, and revenue." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: { sans: ['Inter', 'sans-serif'] },
+              colors: {
+                brand: {
+                  dark: '#0A192F',
+                  accent: '#00E676',
+                  secondary: '#8892B0',
+                  surface: '#112240',
+                  lighter: '#233554',
+                }
+              },
+              borderRadius: { 'custom': '8px' }
+            }
+          }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-dark text-slate-200 font-sans selection:bg-brand-accent selection:text-black overflow-x-hidden">
+
+<nav class="fixed top-0 w-full z-50 bg-brand-dark/80 backdrop-blur-md border-b border-white/5" role="navigation">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <img src="../assets/Foto_perfil_new.jpg" alt="Profile picture" class="w-16 h-16 rounded-full border border-brand-accent shadow-sm ring-4 ring-brand-accent/40 object-cover" />
+            <span class="font-bold text-lg tracking-tight hidden sm:block text-white">I.S.C. José Gregorio Hernández Trejo</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider text-brand-secondary">
+            <a href="../index.en.html" class="hover:text-brand-accent transition-colors">Home</a>
+            <a href="../tecnologia.en.html" class="hover:text-brand-accent transition-colors">Technology</a>
+            <a href="../habilidades.en.html" class="hover:text-brand-accent transition-colors">Skills</a>
+            <a href="../portfolio.en.html" class="hover:text-brand-accent transition-colors text-brand-accent">Portfolio</a>
+            <a href="../experiencia.en.html" class="hover:text-brand-accent transition-colors">Experience</a>
+        </div>
+        <div class="flex items-center space-x-2 text-xs">
+            <a href="parking.html" class="text-brand-secondary hover:text-brand-accent">ES</a>
+            <span class="text-brand-secondary">|</span>
+            <a href="parking.en.html" class="text-brand-accent font-bold">EN</a>
+        </div>
+        <a href="../contacto.en.html" class="bg-brand-accent hover:bg-[#00c853] text-black px-6 py-2.5 rounded-custom font-semibold transition-all shadow-lg shadow-brand-accent/20 active:scale-95">
+            Contact
+        </a>
+    </div>
+</nav>
+
+<main class="pt-32 pb-24">
+    <section class="max-w-5xl mx-auto px-6">
+
+        <div class="mb-16">
+            <a href="../portfolio.en.html" class="text-brand-accent text-sm font-bold uppercase tracking-widest hover:opacity-80 transition-opacity">← Back to Portfolio</a>
+            <h1 class="text-4xl md:text-5xl font-bold mt-6 text-white">iParking: Parking Management</h1>
+            <p class="text-brand-secondary mt-4 text-lg italic">Access Control and Real-Time Revenue Tracking</p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-12">
+            <div class="lg:col-span-2 space-y-12">
+
+                <article class="bg-brand-surface p-8 rounded-custom border border-white/5 shadow-xl">
+                    <h2 class="text-2xl font-bold mb-6 text-white border-b border-brand-accent/20 pb-2">Project Synthesis</h2>
+                    <p class="leading-relaxed text-slate-300">
+                        This comprehensive system allows for the efficient management of public and private parking lots. It controls the vehicle's entire cycle: from issuing an entry ticket with a barcode to the automatic rate calculation upon exit.
+                    </p>
+                    <p class="mt-4 leading-relaxed text-slate-300">
+                        It offers robust tools to prevent capital loss through audits of canceled tickets, movement reports, and shift cash closures, ensuring a transparent and profitable operation.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 class="text-2xl font-bold mb-6 text-white">System Interface</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <img src="../assets/portfolio/parking/mov_entrada.png" alt="Entry Log" class="rounded border border-white/10 shadow-lg w-full h-auto">
+                        <img src="../assets/portfolio/parking/mov_salida.png" alt="Exit Calculation" class="rounded border border-white/10 shadow-lg w-full h-auto">
+                        <img src="../assets/portfolio/parking/move_report.png" alt="Movement Report" class="rounded border border-white/10 shadow-lg w-full h-auto">
+                        <img src="../assets/portfolio/parking/sales_report.png" alt="Sales Report" class="rounded border border-white/10 shadow-lg w-full h-auto">
+                        <img src="../assets/portfolio/parking/cancel_tickets.png" alt="Cancellation Control" class="rounded border border-white/10 shadow-lg w-full h-auto">
+                    </div>
+                </article>
+
+                <article>
+                    <h2 class="text-2xl font-bold mb-4 text-white">System Capabilities</h2>
+                    <ul class="list-disc list-inside text-brand-secondary space-y-2">
+                        <li>Dynamic rate calculation (hourly, partial, daily, or long-term/pension).</li>
+                        <li>Thermal ticket printing with 128/39 barcodes.</li>
+                        <li>Long-term member (pensions) module with validity and monthly payment control.</li>
+                        <li>Complete audit of lost tickets and manual cancellations.</li>
+                        <li>Occupancy charts and peak-hour tracking for informed decision-making.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <aside class="space-y-8">
+                <div class="bg-brand-surface p-6 rounded-custom border border-white/5">
+                    <h3 class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-4">Tech Stack</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">VB 6.0</span>
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">MS Access</span>
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">Crystal Reports</span>
+                    </div>
+                </div>
+
+                <div class="bg-brand-surface p-6 rounded-custom border border-white/5">
+                    <h3 class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-4">Control Modules</h3>
+                    <ul class="text-sm text-brand-secondary space-y-3">
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full"></span>
+                            <span>Real-Time Entries and Exits.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full"></span>
+                            <span>Cash Closure by Operator.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full"></span>
+                            <span>Long-Term/Pension Management.</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<footer class="py-12 border-t border-white/5 bg-[#081324]">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-brand-secondary">
+        <div>© 2026 I.S.C. José Gregorio Hernández Trejo.</div>
+        <div class="flex space-x-8 mt-4 md:mt-0">
+            <a href="https://www.linkedin.com/in/greg-hernandez-android-dev/" target="_blank" class="hover:text-brand-accent transition-colors">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

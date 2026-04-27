@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Study: Mix Calc | I.S.C. José Gregorio Hernández Trejo</title>
+    <meta name="description" content="Detalle del proyecto Mix Calc - Calculadora avanzada publicada en tiendas." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: { sans: ['Inter', 'sans-serif'] },
+              colors: {
+                brand: {
+                  dark: '#0A192F',
+                  accent: '#00E676',
+                  secondary: '#8892B0',
+                  surface: '#112240',
+                  lighter: '#233554',
+                }
+              },
+              borderRadius: { 'custom': '8px' }
+            }
+          }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-dark text-slate-200 font-sans selection:bg-brand-accent selection:text-black overflow-x-hidden">
+
+<nav class="fixed top-0 w-full z-50 bg-brand-dark/80 backdrop-blur-md border-b border-white/5" role="navigation">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <img src="../assets/Foto_perfil_new.jpg" alt="Foto de perfil" class="w-16 h-16 rounded-full border border-brand-accent shadow-sm ring-4 ring-brand-accent/40 object-cover" />
+            <span class="font-bold text-lg tracking-tight hidden sm:block text-white">I.S.C. José Gregorio Hernández Trejo</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider text-brand-secondary">
+            <a href="../index.html" class="hover:text-brand-accent transition-colors">Inicio</a>
+            <a href="../tecnologia.html" class="hover:text-brand-accent transition-colors">Tecnología</a>
+            <a href="../habilidades.html" class="hover:text-brand-accent transition-colors">Habilidades</a>
+            <a href="../portfolio.html" class="hover:text-brand-accent transition-colors text-brand-accent">Portafolio</a>
+            <a href="../experiencia.html" class="hover:text-brand-accent transition-colors">Experiencia</a>
+        </div>
+        <div class="flex items-center space-x-2 text-xs">
+            <a href="mix_calc.html" class="text-brand-accent font-bold">ES</a>
+            <span class="text-brand-secondary">|</span>
+            <a href="mix_calc.en.html" class="text-brand-secondary hover:text-brand-accent">EN</a>
+        </div>
+        <a href="../contacto.html" class="bg-brand-accent hover:bg-[#00c853] text-black px-6 py-2.5 rounded-custom font-semibold transition-all shadow-lg shadow-brand-accent/20 active:scale-95">
+            Contacto
+        </a>
+    </div>
+</nav>
+
+<main class="pt-32 pb-24">
+    <section class="max-w-5xl mx-auto px-6">
+
+        <div class="mb-16">
+            <a href="../portfolio.html" class="text-brand-accent text-sm font-bold uppercase tracking-widest hover:opacity-80 transition-opacity">← Volver al Portafolio</a>
+            <h1 class="text-4xl md:text-5xl font-bold mt-6 text-white tracking-tight">Mix Calc</h1>
+            <p class="text-brand-secondary mt-4 text-lg italic">App Publicada - Tools & Utilities</p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-12">
+            <div class="lg:col-span-2 space-y-12">
+
+                <article class="bg-brand-surface p-8 rounded-custom border border-white/5 shadow-xl">
+                    <h2 class="text-2xl font-bold mb-6 text-white border-b border-brand-accent/20 pb-2">Síntesis del Proyecto</h2>
+                    <p class="leading-relaxed text-slate-300">
+                        <strong>MixCalcBiComponent</strong> es una herramienta de precisión diseñada para artesanos y profesionales que trabajan con mezclas de dos componentes (resinas epóxicas, siliconas, poliuretanos). La aplicación resuelve el problema crítico de las proporciones exactas, garantizando que el curado de los materiales sea perfecto mediante cálculos matemáticos rigurosos.
+                    </p>
+                    <p class="mt-4 leading-relaxed text-slate-300">
+                        Desarrollada íntegramente con <strong>Jetpack Compose</strong> y bajo principios de <strong>Clean Architecture</strong>, la app ofrece una experiencia nativa fluida, con soporte para modo oscuro y un sistema de conversión de unidades inteligente que permite transicionar entre peso y volumen sin perder la precisión del cálculo.
+                    </p>
+                </article>
+
+                <article>
+                    <h2 class="text-2xl font-bold mb-6 text-white">Visualización del Sistema</h2>
+
+                    <!-- Destacado Principal (Mobile Portrait) -->
+                    <div class="mb-8 bg-brand-surface rounded-xl p-8 border border-white/5 shadow-2xl flex justify-center">
+                         <div class="max-w-[280px] mx-auto rounded-[2rem] overflow-hidden border-8 border-brand-lighter shadow-2xl ring-1 ring-white/10">
+                            <img src="../assets/portfolio/mix_calc/Screenshot_20260426_220903.png" alt="Mix Calc Main Interface" class="w-full h-auto">
+                        </div>
+                    </div>
+
+                    <!-- Galería de Interfaz -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        <img src="../assets/portfolio/mix_calc/Screenshot_20260426_220823.png" alt="Mix Calc View 1" class="rounded border border-white/10 shadow-lg w-full h-auto">
+                        <img src="../assets/portfolio/mix_calc/Screenshot_20260426_220834.png" alt="Mix Calc View 2" class="rounded border border-white/10 shadow-lg w-full h-auto">
+                        <img src="../assets/portfolio/mix_calc/Screenshot_20260426_221248.png" alt="Mix Calc View 3" class="rounded border border-white/10 shadow-lg w-full h-auto">
+                        <img src="../assets/portfolio/mix_calc/Screenshot_20260426_220918.png" alt="Mix Calc View 4" class="rounded border border-white/10 shadow-lg w-full h-auto">
+                        <img src="../assets/portfolio/mix_calc/Screenshot_20260426_220939.png" alt="Mix Calc View 5" class="rounded border border-white/10 shadow-lg w-full h-auto">
+                        <img src="../assets/portfolio/mix_calc/Screenshot_20260426_221306.png" alt="Mix Calc View 6" class="rounded border border-white/10 shadow-lg w-full h-auto">
+                    </div>
+
+                    <p class="mt-8 text-sm text-brand-secondary text-center italic">Interfaz reactiva desarrollada íntegramente con Jetpack Compose y Material 3.</p>
+                </article>
+
+                <article>
+                    <h2 class="text-2xl font-bold mb-4 text-white">Logros Técnicos</h2>
+                    <ul class="list-disc list-inside text-brand-secondary space-y-2">
+                        <li><strong>Arquitectura MVVM + Clean Architecture:</strong> Separación clara de responsabilidades para un mantenimiento ágil.</li>
+                        <li><strong>Inyección de Dependencias:</strong> Implementación de <strong>Koin</strong> para una gestión de componentes eficiente.</li>
+                        <li><strong>Persistencia Local:</strong> Uso de <strong>Preferences DataStore</strong> para el almacenamiento del historial de mezclas.</li>
+                        <li><strong>Validación de Lógica:</strong> Cobertura de tests unitarios con <strong>JUnit 4</strong> para garantizar conversiones exactas.</li>
+                        <li><strong>Diseño UI/UX:</strong> Interfaz reactiva con Material 3, soporte para Dark Mode e iconos adaptativos.</li>
+                        <li><strong>Offline First:</strong> Funcionamiento total sin requerir conexión a internet.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <aside class="space-y-8">
+                <div class="bg-brand-surface p-6 rounded-custom border border-white/5 shadow-xl">
+                    <h3 class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-4">Tech Stack</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">Kotlin 1.9+</span>
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">Jetpack Compose</span>
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">Material 3</span>
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">Koin DI</span>
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">DataStore</span>
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">JUnit 4</span>
+                    </div>
+                </div>
+
+                <div class="bg-brand-surface p-6 rounded-custom border border-white/5 shadow-xl">
+                    <h3 class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-4">Funcionalidades Clave</h3>
+                    <ul class="text-sm text-brand-secondary space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full mt-1.5"></span>
+                            <span><strong>Doble Modo:</strong> Cálculo por Cantidad Total o por Porción A conocida.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full mt-1.5"></span>
+                            <span><strong>Conversión Pro:</strong> Cambio en tiempo real entre Gramos, Libras, Onzas, Litros y Galones.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full mt-1.5"></span>
+                            <span><strong>Historial de Mezclas:</strong> Lista robusta con persistencia y gesto "Swipe-to-delete".</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full mt-1.5"></span>
+                            <span><strong>Ratios Custom:</strong> Soporte para cualquier relación de mezcla (1:1, 2:1, 100:42, etc).</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-brand-surface p-6 rounded-custom border border-white/5 shadow-xl">
+                    <h3 class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-4">Disponibilidad</h3>
+                    <div class="space-y-4">
+                        <a href="https://play.google.com/store/apps/details?id=com.jght.greghdezmxqro.util.mixcalcbicomponent&pcampaignid=web_share" target="_blank" class="flex items-center justify-center gap-2 w-full py-3 bg-brand-accent text-black font-bold rounded hover:bg-[#00c853] transition-all">
+                            <span>Google Play Store</span>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<footer class="py-12 border-t border-white/5 bg-[#081324]">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-brand-secondary">
+        <div>© 2026 I.S.C. José Gregorio Hernández Trejo.</div>
+        <div class="flex space-x-8 mt-4 md:mt-0">
+            <a href="https://www.linkedin.com/in/greg-hernandez-android-dev/" target="_blank" class="hover:text-brand-accent transition-colors">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

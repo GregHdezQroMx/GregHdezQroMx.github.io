@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Software Consulting & Digital Transformation | I.S.C. José Gregorio Hernández Trejo</title>
+  <meta name="description" content="Scalable software architecture for PYMES. Systems Engineer with 20+ years in Kotlin Multiplatform (KMP), Android, iOS, and Web. Strategic digital transformation." />
+  <meta name="keywords" content="software consulting, Kotlin Multiplatform, Android, iOS, Web, PYMES, software architecture, digital transformation" />
+  <meta name="author" content="I.S.C. José Gregorio Hernández Trejo" />
+  <meta name="theme-color" content="#0A192F" />
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Tailwind CSS v3 -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#0A192F',
+              accent: '#00E676',
+              secondary: '#8892B0',
+              surface: '#112240',
+              lighter: '#233554',
+            }
+          },
+          borderRadius: {
+            'custom': '8px',
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="bg-brand-dark text-slate-200 font-sans selection:bg-brand-accent selection:text-black overflow-x-hidden">
+  <!-- ==========================================
+       NAVIGATION BAR
+       ========================================== -->
+  <nav class="fixed top-0 w-full z-50 glass-effect" role="navigation" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- Logo & Brand -->
+      <div class="flex items-center space-x-3">
+        <img src="assets/Foto_perfil_new.jpg" alt="Foto de perfil de I.S.C. José Gregorio Hernández Trejo" class="w-16 h-16 rounded-full border border-brand-accent shadow-sm ring-4 ring-brand-accent/40 object-cover" />
+        <span class="font-bold text-lg tracking-tight hidden sm:block text-white">I.S.C. José Gregorio Hernández Trejo</span>
+      </div>
+      
+      <!-- Desktop Navigation Links -->
+      <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wider text-brand-secondary">
+        <a href="index.en.html" class="text-brand-accent">Home</a>
+        <a href="tecnologia.en.html" class="hover:text-brand-accent transition-colors normal-case">Technology</a>
+        <a href="habilidades.en.html" class="hover:text-brand-accent transition-colors normal-case">Skills</a>
+        <a href="portfolio.en.html" class="hover:text-brand-accent transition-colors normal-case">Portfolio</a>
+        <a href="experiencia.en.html" class="hover:text-brand-accent transition-colors normal-case">Experience</a>
+      </div>
+      
+      <div class="flex items-center space-x-2 text-xs">
+        <a href="index.html" class="text-brand-secondary hover:text-brand-accent">ES</a>
+        <span class="text-brand-secondary">|</span>
+        <a href="index.en.html" class="text-brand-secondary hover:text-brand-accent">EN</a>
+      </div>
+      
+      <!-- CTA Button -->
+      <a href="contacto.en.html" class="bg-brand-accent hover:bg-[#00c853] text-black px-6 py-2.5 rounded-custom font-semibold transition-all shadow-lg shadow-brand-accent/20 active:scale-95">
+        Contact
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section id="hero" class="relative min-h-[90vh] flex items-center pt-20 overflow-hidden tech-pattern" role="banner">
+      <!-- Background Gradient Orbs -->
+      <div class="absolute top-1/4 -left-20 w-96 h-96 bg-brand-accent/5 rounded-full blur-[120px]"></div>
+      <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-emerald-500/5 rounded-full blur-[120px]"></div>
+      
+      <div class="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Hero Content -->
+        <div class="animate-fade-in-up">
+          <span class="inline-block py-1 px-3 rounded-full bg-brand-accent/10 border border-brand-accent/30 text-brand-accent text-xs font-bold uppercase tracking-widest mb-6">
+            Software Consulting & Digital Transformation
+          </span>
+
+          <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-white">
+            Scalable <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-emerald-400">Software Architecture</span> for PYMES
+          </h1>
+          
+          <p class="text-xl text-brand-secondary leading-relaxed mb-10 max-w-xl">
+            <strong>Systems Engineer</strong> with <strong>20+ years of experience in IT</strong>. Specialist in Compose Multiplatform (CMP), Android Native and Backend with Kotlin and DB (fullstack ecosystem). I turn technical challenges into strategic solutions for your business.
+          </p>
+          
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="contacto.en.html" class="px-8 py-4 bg-brand-accent hover:bg-[#00c853] rounded-custom font-bold text-lg text-black text-center transition-all transform hover:-translate-y-1 shadow-xl shadow-brand-accent/25">
+              Book a session to discuss your project
+            </a>
+            <a href="portfolio.en.html" class="px-8 py-4 border border-brand-secondary/30 text-slate-200 hover:bg-white/5 hover:border-brand-accent/50 rounded-custom font-bold text-lg text-center transition-all">
+              View Portfolio
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual (KMP Orbits) -->
+        <div class="hidden lg:flex justify-center items-center relative h-[500px]">
+          <!-- Center Core -->
+          <div class="relative z-20">
+            <div class="absolute -inset-8 bg-brand-accent/10 rounded-full blur-3xl"></div>
+            <div class="w-40 h-40 glass-card rounded-full flex flex-col items-center justify-center border-2 border-brand-accent/40 shadow-[0_0_60px_rgba(0,230,118,0.15)] relative z-10 text-center px-4">
+              <img alt="Kotlin Logo" class="w-12 h-12 mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0qUN7usjUydQjrj__UPBKmPy52mnmH0H2LngvPOJp_tA899ihbsIaYB_tKWd3itDX-TWIXkjL00pwfyEUontuvIxF3NO4gCxYKSqi9u-eVGpqbXLJvttNw91FB8JeFOFilkvoqT49980FvgMdT_STLbe97UX615gCzmK5-qyxt_WpmAL9Wm0kCM-tMk_Hm3Eqnx_myhLVD0oSaZEwApj3DX4PE6cMe75PFCc6vArqOlKl7oJZd8DI-mG8tUyIedSqliUypJiU2vQo" />
+              <span class="text-[9px] font-bold text-brand-accent tracking-[0.1em] uppercase block">Single Codebase</span>
+              <div class="w-6 h-[1px] bg-brand-accent/30 my-1.5"></div>
+              <span class="text-[9px] font-bold text-white tracking-[0.1em] uppercase block">Unified UI</span>
+            </div>
+            
+            <!-- Orbiting Icons -->
+            <div class="absolute inset-0 pointer-events-none">
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] border border-brand-accent/10 rounded-full"></div>
+              
+              <!-- Android Orbit -->
+              <div class="orbit-item orbit-1">
+                <div class="w-12 h-12 bg-brand-surface border border-brand-accent/30 rounded-xl flex items-center justify-center shadow-lg">
+                  <img alt="Android Logo" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBq9hy1I5_HTZj9XVM-BOdQ5eqLhsj67aSN7VmzmnYflU7MckY6GePGwsUKRoEtBh3JZsMHamcAEdTM_-2schPr8_HAZLhN2IT_QGY2MQVF6FwRuQTl4RAiz_9QmaNoUrMb-ypexFMJaTDtv8p47JMiDroBzBFIxUoy2IaalG7sM_koAHK-uurVlFxhIjEjGgcNmNDOL3V-A6hJxhPXK5pmAtD-HIhwIlbCAHTH685m6OXLxXV7pC0l5N2ecluO4cvTWBLW7GcCYMw1" />
+                </div>
+              </div>
+              
+              <!-- iOS Orbit -->
+              <div class="orbit-item orbit-2">
+                <div class="w-12 h-12 bg-brand-surface border border-brand-accent/30 rounded-xl flex items-center justify-center shadow-lg">
+                  <img alt="iOS Logo" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWWyGyU_gUMSaoD-zHk2Dn8F9vBmDEvsEcMzp4dX_RId2WtOv78G6Qko6Je_uP0cNsJWMxx_xmSfjvKPztUVu4qoAu4P82jeCD4IvhIYQavKWamzRmrQ6XTeurTTufN3H3RgAzkAk578pSh0c4J570_-tCk8ODXYrNzWhSurWf5U_HKUN2pJ3kI3MoSLd-_w_wCCHJfz8RNNpNvyDYrb2FzSyQPV62XXntwT03dEOTON9j9F5x2R8-xnnc_rlgJMWhRg8GBvcrI_bw" />
+                </div>
+              </div>
+              
+              <!-- Web Orbit -->
+              <div class="orbit-item orbit-3">
+                <div class="w-12 h-12 bg-brand-surface border border-brand-accent/30 rounded-xl flex items-center justify-center shadow-lg">
+                  <img alt="Web Logo" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTYe30qfmqSpMO3zwCPEU2cxqLhxxZbyNZAFIO-HrGVnkTxKGtbgpYBz7D4z5YWtnKVKdeFIFfTs21vzQJugyexbBNqA0QPusPq7ZCAm3fwZQBg457my7Pyimbxle3OWxGxzIlsaJ6rVJpNsLqVLEwhjsXezyLaAzNkaqrRSv1X5HfYXnh28ZXCaGeiKdyamLXQ9v5B34fHdNAfuRQCvKxHXj_rxGlCjKJYgxFhWKEwg2uug7gFhBy3T7NbZToP7gpcOZyRjoveKCC" />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 text-center">
+            <p class="text-xs font-bold text-brand-secondary tracking-[0.3em] uppercase opacity-60">Multi-Platform</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         EXPLORE SECTION (Browse by page)
+         ========================================== -->
+    <section class="py-24 bg-brand-dark/70 border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <span class="text-brand-accent font-bold tracking-widest uppercase text-xs">Service Menu</span>
+          <h2 class="text-4xl font-bold mt-2 text-white">How can I help you?</h2>
+          <p class="text-brand-secondary max-w-2xl mx-auto mt-4 text-lg">
+            Explore my areas of expertise and discover how we can boost your project.
+          </p>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <a href="tecnologia.en.html" class="group p-8 bg-brand-surface border border-white/10 rounded-custom hover:border-brand-accent/40 hover:shadow-xl hover:shadow-brand-accent/10 transition-all flex flex-col h-full">
+            <div class="w-12 h-12 bg-brand-accent/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/20 transition-colors">
+              <svg class="w-6 h-6 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.618.308a2 2 0 01-1.076.216l-1.637-.164a2 2 0 00-1.325.432l-1.921 1.44a2 2 0 01-1.12.35H5a2 2 0 01-2-2V9a2 2 0 012-2h1.12a2 2 0 001.12-.35L9.16 5.21a2 2 0 011.325-.432l1.637.164a2 2 0 001.076-.216l.618-.308a6 6 0 013.86-.517l2.387.477a2 2 0 001.022.547V15.428z" /></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">CMP Technology</h3>
+            <p class="text-brand-secondary text-sm flex-grow mb-6">Compose Multiplatform: the ultimate solution to save costs by sharing logic and unified UI between Android, iOS, Desktop and Web.</p>
+            <span class="inline-flex items-center text-sm font-semibold text-brand-accent group-hover:translate-x-2 transition-transform">See details →</span>
+          </a>
+
+          <a href="habilidades.en.html" class="group p-8 bg-brand-surface border border-white/10 rounded-custom hover:border-brand-accent/40 hover:shadow-xl hover:shadow-brand-accent/10 transition-all flex flex-col h-full">
+            <div class="w-12 h-12 bg-brand-accent/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/20 transition-colors">
+              <svg class="w-6 h-6 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Technical Skills</h3>
+            <p class="text-brand-secondary text-sm flex-grow mb-6">Modern stack focused on the Android and Kotlin ecosystem. Native development and scalable architectures.</p>
+            <span class="inline-flex items-center text-sm font-semibold text-brand-accent group-hover:translate-x-2 transition-transform">See stack →</span>
+          </a>
+
+          <a href="portfolio.en.html" class="group p-8 bg-brand-surface border border-white/10 rounded-custom hover:border-brand-accent/40 hover:shadow-xl hover:shadow-brand-accent/10 transition-all flex flex-col h-full">
+            <div class="w-12 h-12 bg-brand-accent/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/20 transition-colors">
+              <svg class="w-6 h-6 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Project Portfolio</h3>
+            <p class="text-brand-secondary text-sm flex-grow mb-6">Explore my real success stories: from complex POS systems to published mobile applications.</p>
+            <span class="inline-flex items-center text-sm font-semibold text-brand-accent group-hover:translate-x-2 transition-transform">See projects →</span>
+          </a>
+
+          <a href="experiencia.en.html" class="group p-8 bg-brand-surface border border-white/10 rounded-custom hover:border-brand-accent/40 hover:shadow-xl hover:shadow-brand-accent/10 transition-all flex flex-col h-full">
+            <div class="w-12 h-12 bg-brand-accent/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent/20 transition-colors">
+              <svg class="w-6 h-6 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Work Experience</h3>
+            <p class="text-brand-secondary text-sm flex-grow mb-6">Corporate trajectory in demanding environments such as Scotiabank, Kavak and Santander.</p>
+            <span class="inline-flex items-center text-sm font-semibold text-brand-accent group-hover:translate-x-2 transition-transform">See trajectory →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         QUICK CONTACT / CTA SECTION
+         ========================================== -->
+    <section class="py-24 bg-brand-surface/20">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to take your PYME to the next level?</h2>
+        <p class="text-xl text-brand-secondary mb-10">
+          Let's transform your technical challenges into a competitive advantage with modern and scalable software architecture.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="contacto.en.html" class="px-8 py-4 bg-brand-accent hover:bg-[#00c853] text-black rounded-custom font-bold text-lg transition-all shadow-xl shadow-brand-accent/25">
+            Contact Now
+          </a>
+          <a href="mailto:ghetzoom@gmail.com" class="px-8 py-4 border border-brand-secondary/30 text-white rounded-custom font-bold text-lg hover:bg-white/5 transition-all">
+            Send Email
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="py-12 border-t border-white/5 bg-[#081324]">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-brand-secondary">
+      <div class="mb-4 md:mb-0">
+        © 2026 I.S.C. José Gregorio Hernández Trejo. Software Consulting.
+      </div>
+      <div class="flex space-x-8">
+        <a href="https://www.linkedin.com/in/greg-hernandez-android-dev/" target="_blank" class="hover:text-brand-accent transition-colors normal-case">LinkedIn</a>
+        <a href="https://github.com/ghetzoom" target="_blank" class="hover:text-brand-accent transition-colors normal-case">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/app.js"></script>
+</body>
+</html>

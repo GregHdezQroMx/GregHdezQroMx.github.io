@@ -1,25 +1,56 @@
-# Quick-Connect Professional Card (PWA) 📱
+# 🚀 Consultoría de Software & Transformación Digital
+### I.S.C. José Gregorio Hernández Trejo - Senior Fullstack Developer
 
-A minimalist, high-performance single-page web application designed for instant professional networking via QR code. 
-
-## 🚀 Overview
-This project serves as a digital business card, optimized for mobile devices. It allows recruiters and peers to access my professional profiles (LinkedIn, Portfolio, GitHub) with a single tap. Built as a **Progressive Web App (PWA)**, it can be "installed" on mobile home screens for offline-ready access.
-
-## 🛠️ Tech Stack
-* **HTML5 & CSS3**: Semantic structure.
-* **Tailwind CSS**: Modern, utility-first styling for mobile responsiveness.
-* **JavaScript (PWA)**: Manifest integration for "Add to Home Screen" functionality.
-* **GitHub Pages**: Automated CI/CD deployment.
-
-## ✨ Key Features
-* **Mobile-First Design**: Optimized touch targets (48px+) for effortless navigation.
-* **Zero Friction**: No app store download required; opens instantly in any browser.
-* **Scalable**: Easy to update links without reprinting physical QR codes.
-
-## 📂 Project Structure
-* `index.html`: Main UI and logic.
-* `manifest.json`: PWA configuration for mobile installation.
-* `profile.jpg`: Professional headshot.
+Landing page profesional optimizada para la captación de clientes en el sector de consultoría tecnológica, con un enfoque especial en **Arquitectura de Software**, **Kotlin Multiplatform (KMP)** y soluciones para **PYMES**.
 
 ---
-*Developed with a focus on efficiency and user experience.*
+
+## 🎯 Propuesta de Valor
+- **Experiencia:** 20+ años en TI, 6+ años en desarrollo móvil nativo.
+- **Especialización:** Soluciones multiplataforma (Android, iOS, Web, Desktop) compartiendo hasta el 80% de la lógica de negocio.
+- **Enfoque PYME:** Transformación digital estratégica, no solo código.
+
+## 🏗️ Estructura del Proyecto
+El proyecto ha sido refactorizado de una PWA a una arquitectura modular limpia sin dependencias pesadas:
+
+```text
+/
+├── index.html          # Landing page principal (Español)
+├── index.en.html       # Versión en Inglés
+├── css/
+│   └── main.css        # Estilos custom, animaciones y glassmorphism
+├── js/
+│   └── app.js          # Lógica modular (Vanilla JS: Nav, Form, Animations)
+├── assets/             # Recursos visuales y branding
+├── portfolio/          # Detalles y assets de proyectos (KomPOS, KommHotel, etc.)
+└── docs/               # Documentación adicional de desarrollo
+```
+
+## 🛠️ Stack Tecnológico
+- **Frontend:** HTML5 Semántico, Tailwind CSS v3 (via CDN).
+- **Interactividad:** Vanilla JavaScript (ES6+).
+- **Optimización:** Intersection Observer para animaciones on-scroll y Lazy Loading.
+- **Arquitectura:** Mobile-first, Responsividad Total.
+
+## 🚀 Instalación y Uso Local
+Para visualizar o seguir desarrollando la landing page:
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/ghetzoom/GregHdezQroMx.github.io.git
+   ```
+2. **Servidor local (recomendado):**
+   ```bash
+   # Usando Python
+   python -m http.server 8000
+   ```
+3. **Acceso:** Abre `http://localhost:8000` en tu navegador.
+
+## 📈 SEO y Accesibilidad
+- Meta tags optimizados para consultoría de software en Querétaro/México.
+- Estructura de encabezados jerárquica (H1-H6).
+- Soporte para `prefers-reduced-motion`.
+- Contraste de colores certificado WCAG AA+.
+
+---
+*Desarrollado con ❤️ por J. Gregorio Hernández T.*

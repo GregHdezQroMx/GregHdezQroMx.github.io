@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Study: HelpDesk | I.S.C. José Gregorio Hernández Trejo</title>
+    <meta name="description" content="HelpDesk Management System project detail - Work Order management." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: { sans: ['Inter', 'sans-serif'] },
+              colors: {
+                brand: {
+                  dark: '#0A192F',
+                  accent: '#00E676',
+                  secondary: '#8892B0',
+                  surface: '#112240',
+                  lighter: '#233554',
+                }
+              },
+              borderRadius: { 'custom': '8px' }
+            }
+          }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-dark text-slate-200 font-sans selection:bg-brand-accent selection:text-black overflow-x-hidden">
+
+<nav class="fixed top-0 w-full z-50 bg-brand-dark/80 backdrop-blur-md border-b border-white/5" role="navigation">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <img src="../assets/Foto_perfil_new.jpg" alt="Profile photo" class="w-16 h-16 rounded-full border border-brand-accent shadow-sm ring-4 ring-brand-accent/40 object-cover" />
+            <span class="font-bold text-lg tracking-tight hidden sm:block text-white">I.S.C. José Gregorio Hernández Trejo</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider text-brand-secondary">
+            <a href="../index.en.html" class="hover:text-brand-accent transition-colors">Home</a>
+            <a href="../tecnologia.en.html" class="hover:text-brand-accent transition-colors">Technology</a>
+            <a href="../habilidades.en.html" class="hover:text-brand-accent transition-colors">Skills</a>
+            <a href="../portfolio.en.html" class="hover:text-brand-accent transition-colors text-brand-accent">Portfolio</a>
+            <a href="../experiencia.en.html" class="hover:text-brand-accent transition-colors">Experience</a>
+        </div>
+        <div class="flex items-center space-x-2 text-xs">
+            <a href="helpdesk.html" class="text-brand-secondary hover:text-brand-accent">ES</a>
+            <span class="text-brand-secondary">|</span>
+            <a href="helpdesk.en.html" class="text-brand-accent font-bold">EN</a>
+        </div>
+        <a href="../contacto.en.html" class="bg-brand-accent hover:bg-[#00c853] text-black px-6 py-2.5 rounded-custom font-semibold transition-all shadow-lg shadow-brand-accent/20 active:scale-95">
+            Contact
+        </a>
+    </div>
+</nav>
+
+<main class="pt-32 pb-24">
+    <section class="max-w-5xl mx-auto px-6">
+
+        <div class="mb-16">
+            <a href="../portfolio.en.html" class="text-brand-accent text-sm font-bold uppercase tracking-widest hover:opacity-80 transition-opacity">← Back to Portfolio</a>
+            <h1 class="text-4xl md:text-5xl font-bold mt-6 text-white">HelpDesk Management System</h1>
+            <p class="text-brand-secondary mt-4 text-lg italic">Technical Support Management - Enterprise Solutions</p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-12">
+            <div class="lg:col-span-2 space-y-12">
+
+                <article class="bg-brand-surface p-8 rounded-custom border border-white/5 shadow-xl">
+                    <h2 class="text-2xl font-bold mb-6 text-white border-b border-brand-accent/20 pb-2">Project Synthesis</h2>
+                    <p class="leading-relaxed text-slate-300">
+                        This system automates all service requests directed to the systems department through a hierarchical structure of <strong>Orders and Tasks</strong>.
+                        It allows capturing critical data such as user location, problem description, assigned personnel, and tracking of response and solution times.
+                    </p>
+                </article>
+
+                <div class="space-y-8">
+                    <h2 class="text-2xl font-bold text-white">Interface Views</h2>
+
+                    <div class="group">
+                        <div class="overflow-hidden rounded-custom border border-white/10 group-hover:border-brand-accent/50 transition-colors bg-brand-lighter">
+                            <img src="../assets/portfolio/helpdesk/Captura 4 full.jpg" alt="Work Order Capture" class="w-full h-auto shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]" />
+                        </div>
+                        <p class="mt-4 text-sm text-brand-secondary">
+                            Main "Work Order Capture" interface showing the registration form, user data, assigned personnel, and progress log.
+                        </p>
+                    </div>
+                </div>
+
+                <article>
+                    <h2 class="text-2xl font-bold mb-4 text-white">Technical Capabilities</h2>
+                    <ul class="list-disc list-inside text-brand-secondary space-y-2">
+                        <li>Hierarchical management of work orders and sub-tasks.</li>
+                        <li>Precise tracking of response and resolution times.</li>
+                        <li>Reporting of technical performance and incident volume.</li>
+                        <li>Scheduling of recurring or future maintenance tasks.</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h2 class="text-2xl font-bold mb-4 text-white">Technical Achievements</h2>
+                    <ul class="list-disc list-inside text-brand-secondary space-y-2">
+                        <li>Development of a robust desktop client for internal systems management.</li>
+                        <li>Implementation of business logic for real-time SLA monitoring.</li>
+                        <li>Seamless integration with local databases for rapid query execution.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <aside class="space-y-8">
+                <div class="bg-brand-surface p-6 rounded-custom border border-white/5">
+                    <h3 class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-4">Tech Stack</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">VB 6.0</span>
+                        <span class="px-3 py-1 bg-brand-lighter rounded text-xs text-slate-300 border border-white/5">MS Access</span>
+                    </div>
+                </div>
+
+                <div class="bg-brand-surface p-6 rounded-custom border border-white/5">
+                    <h3 class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-4">Core Modules</h3>
+                    <ul class="text-sm text-brand-secondary space-y-3">
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full"></span>
+                            <span>Incident Capture & Tracking.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full"></span>
+                            <span>Task Assignment.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-brand-accent rounded-full"></span>
+                            <span>Performance Analytics.</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<footer class="py-12 border-t border-white/5 bg-[#081324]">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-brand-secondary">
+        <div>© 2026 I.S.C. José Gregorio Hernández Trejo.</div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | I.S.C. José Gregorio Hernández Trejo</title>
+  <meta name="description" content="Portafolio de proyectos reales para PYMES: KommPOS, KommHotel y aplicaciones publicadas. Consultoría de software con entrega real." />
+  <meta name="keywords" content="Portafolio, PYMES, KommPOS, KommHotel, aplicaciones" />
+  <meta name="author" content="I.S.C. José Gregorio Hernández Trejo" />
+  <meta name="theme-color" content="#0A192F" />
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#0A192F',
+              accent: '#00E676',
+              secondary: '#8892B0',
+              surface: '#112240',
+              lighter: '#233554',
+            }
+          },
+          borderRadius: {
+            'custom': '8px',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="bg-brand-dark text-slate-200 font-sans selection:bg-brand-accent selection:text-black overflow-x-hidden">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 glass-effect" role="navigation" aria-label="Navegación principal">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- Logo & Brand -->
+      <div class="flex items-center space-x-3">
+        <img src="assets/Foto_perfil_new.jpg" alt="Foto de perfil de I.S.C. José Gregorio Hernández Trejo" class="w-16 h-16 rounded-full border border-brand-accent shadow-sm ring-4 ring-brand-accent/40 object-cover" />
+        <span class="font-bold text-lg tracking-tight hidden sm:block text-white">I.S.C. José Gregorio Hernández Trejo</span>
+      </div>
+      <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider text-brand-secondary">
+        <a href="index.html" class="hover:text-brand-accent transition-colors">Inicio</a>
+        <a href="tecnologia.html" class="hover:text-brand-accent transition-colors">Tecnología</a>
+        <a href="habilidades.html" class="hover:text-brand-accent transition-colors">Habilidades</a>
+        <a href="portfolio.html" class="hover:text-brand-accent transition-colors">Portafolio</a>
+        <a href="experiencia.html" class="hover:text-brand-accent transition-colors">Experiencia</a>
+      </div>
+      <div class="flex items-center space-x-2 text-xs">
+        <a href="portfolio.html" class="text-brand-secondary hover:text-brand-accent">ES</a>
+        <span class="text-brand-secondary">|</span>
+        <a href="portfolio.en.html" class="text-brand-secondary hover:text-brand-accent">EN</a>
+      </div>
+      <a href="contacto.html" class="bg-brand-accent hover:bg-[#00c853] text-black px-6 py-2.5 rounded-custom font-semibold transition-all shadow-lg shadow-brand-accent/20 active:scale-95">
+        Contacto
+      </a>
+    </div>
+  </nav>
+
+  <main class="pt-20">
+    <section class="py-24 bg-brand-surface/20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+          <div>
+            <span class="text-brand-accent font-bold tracking-widest uppercase text-xs">Portafolio Estratégico</span>
+            <h1 class="text-4xl font-bold mt-2 text-white">Resultados Tangibles</h1>
+          </div>
+          <p class="text-brand-secondary max-w-md">Casos de éxito reales que demuestran arquitectura técnica profesional y capacidad para entregar productos listos para el mercado.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+          <!-- KommPOS Card -->
+          <article class="product-card flex flex-col h-full bg-brand-surface rounded-custom overflow-hidden border border-white/5 hover:border-brand-accent/30 transition-all hover:shadow-2xl hover:shadow-brand-accent/5">
+            <a href="portfolio/kommpos.html" class="block h-72 bg-[#0c1e3a] flex items-center justify-center p-8 border-b border-white/5 overflow-hidden">
+              <img alt="KommPOS Point of Sale System" class="rounded shadow-2xl h-full w-auto transform hover:scale-105 transition-transform duration-500" src="assets/portfolio/kommpos/Screenshot_20260421_170457.png" />
+            </a>
+            <div class="p-8 flex flex-col flex-grow">
+              <a href="portfolio/kommpos.html">
+                <h3 class="text-2xl font-bold mb-3 text-white hover:text-brand-accent transition-colors">KommPOS</h3>
+              </a>
+              <p class="text-brand-secondary text-sm mb-2 italic">Sistema Punto de Venta (POS) - Compose Multiplataforma</p>
+              <p class="text-brand-secondary mb-6 flex-grow">
+                <strong>Transformación digital completa:</strong> Prototipado en <strong>72 horas</strong>, despliegue en múltiples plataformas (Android, iOS, Web, Desktop). Sistema fiable que gestiona inventario, cobros y analytics en tiempo real para comercios.
+              </p>
+              <div class="pt-6 border-t border-white/5">
+                <p class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-3">Tech Stack</p>
+                <p class="text-xs text-brand-secondary">Compose Multiplatform • Ktor Server • PostgreSQL • Stripe API • Room DB</p>
+              </div>
+            </div>
+            <div class="p-8 pt-4">
+              <a href="portfolio/kommpos.html" class="block w-full py-2 text-xs font-bold text-brand-accent uppercase tracking-widest hover:text-[#00c853] transition-colors text-center border border-brand-accent/20 rounded hover:bg-brand-accent/10">
+                VER CASO DE ESTUDIO →
+              </a>
+            </div>
+          </article>
+
+          <!-- KommHotel Card -->
+          <article class="product-card flex flex-col h-full bg-brand-surface rounded-custom overflow-hidden border border-white/5 hover:border-brand-accent/30 transition-all hover:shadow-2xl hover:shadow-brand-accent/5">
+            <a href="portfolio/kommhotel.html" class="block h-72 bg-[#0c1e3a] flex items-center justify-center p-8 border-b border-white/5 overflow-hidden">
+              <img alt="KommHotel Hospitality Management System" class="rounded shadow-2xl h-full w-auto transform hover:scale-105 transition-transform duration-500" src="assets/portfolio/kommhotel/room.png" />
+            </a>
+            <div class="p-8 flex flex-col flex-grow">
+              <a href="portfolio/kommhotel.html">
+                <h3 class="text-2xl font-bold mb-3 text-white hover:text-brand-accent transition-colors">KommHotel</h3>
+              </a>
+              <p class="text-brand-secondary text-sm mb-2 italic">Ecosistema Fullstack - Hospitality & SaaS</p>
+              <p class="text-brand-secondary mb-6 flex-grow">
+                <strong>Arquitectura modular sin igual:</strong> Backend Ktor robusto con Coroutines, frontend Compose Multiplatform. Unidad de gestión integral: reservas, check-in/out, facturación y CRM de huéspedes.
+              </p>
+              <div class="pt-6 border-t border-white/5">
+                <p class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-3">Tech Stack</p>
+                <p class="text-xs text-brand-secondary">Ktor Server • Compose Multiplatform • PostgreSQL • Coroutines • REST & WebSocket APIs</p>
+              </div>
+            </div>
+            <div class="p-8 pt-4">
+              <a href="portfolio/kommhotel.html" class="block w-full py-2 text-xs font-bold text-brand-accent uppercase tracking-widest hover:text-[#00c853] transition-colors text-center border border-brand-accent/20 rounded hover:bg-brand-accent/10">
+                VER CASO DE ESTUDIO →
+              </a>
+            </div>
+          </article>
+
+          <!-- Mix Calc Card -->
+          <article class="product-card flex flex-col h-full bg-brand-surface rounded-custom overflow-hidden border border-white/5 hover:border-brand-accent/30 transition-all hover:shadow-2xl hover:shadow-brand-accent/5">
+            <a href="portfolio/mix_calc.html" class="block h-72 bg-[#0c1e3a] flex items-center justify-center p-8 border-b border-white/5 overflow-hidden">
+              <img alt="Mix Calc - Advanced Calculator App" class="rounded shadow-2xl w-auto h-full max-h-72 transform hover:scale-105 transition-transform duration-500" src="assets/portfolio/mix_calc/Screenshot_20260426_220903.png" />
+            </a>
+            <div class="p-8 flex flex-col flex-grow">
+              <a href="portfolio/mix_calc.html">
+                <h3 class="text-2xl font-bold mb-3 text-white hover:text-brand-accent transition-colors">Mix Calc</h3>
+              </a>
+              <p class="text-brand-secondary text-sm mb-2 italic">App Publicada - Tools & Utilities</p>
+              <p class="text-brand-secondary mb-6 flex-grow">
+                <strong>Utilidad real, nivel producción:</strong> Aplicación publicada en Play Store que demuestra la capacidad de entregar productos pulidos, testados y listos para usuarios reales.
+              </p>
+              <div class="pt-6 border-t border-white/5">
+                <p class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-3">Tech Stack</p>
+                <p class="text-xs text-brand-secondary">Kotlin • Jetpack Compose • Google Play • CI/CD Pipeline</p>
+              </div>
+            </div>
+            <div class="p-8 pt-4 space-y-3">
+              <a href="https://play.google.com/store/apps/details?id=com.jght.greghdezmxqro.util.mixcalcbicomponent&pcampaignid=web_share" target="_blank" class="block w-full py-2 text-xs font-bold text-brand-accent uppercase tracking-widest hover:text-[#00c853] transition-colors text-center border border-brand-accent/20 rounded hover:bg-brand-accent/10">
+                Play Store
+              </a>
+              <a href="portfolio/mix_calc.html" class="block w-full py-2 text-xs font-bold text-white uppercase tracking-widest hover:text-brand-accent transition-colors text-center bg-white/5 rounded hover:bg-white/10">
+                VER CASO DE ESTUDIO →
+              </a>
+            </div>
+          </article>
+
+          <!-- Cyber Rent Card -->
+          <article class="product-card flex flex-col h-full bg-brand-surface rounded-custom overflow-hidden border border-white/5 hover:border-brand-accent/30 transition-all hover:shadow-2xl hover:shadow-brand-accent/5">
+            <a href="portfolio/cyber_rent.html" class="block h-56 bg-[#0c1e3a] flex items-center justify-center p-8 border-b border-white/5 overflow-hidden">
+              <img alt="Cyber Rent System" class="rounded shadow-2xl h-4/5 transform hover:scale-105 transition-transform duration-500" src="assets/portfolio/cyber_rent/time_control.png" />
+            </a>
+            <div class="p-8 flex flex-col flex-grow">
+              <a href="portfolio/cyber_rent.html">
+                <h3 class="text-2xl font-bold mb-3 text-white hover:text-brand-accent transition-colors">Cyber Rent</h3>
+              </a>
+              <p class="text-brand-secondary text-sm mb-2 italic">Gestión de Tiempos y Servicios - Retail & Gaming</p>
+              <p class="text-brand-secondary mb-6 flex-grow">
+                <strong>Control administrativo riguroso:</strong> El sistema automatiza el conteo de tiempo por equipo gestionando servicios de impresión y avisos de tiempo de renta por vencer. Comunicación en tiempo real vía Sockets.
+              </p>
+              <div class="pt-6 border-t border-white/5">
+                <p class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-3">Tech Stack</p>
+                <p class="text-xs text-brand-secondary">VB 6.0 • MS Access • Sockets TCP/IP</p>
+              </div>
+            </div>
+            <div class="p-8 pt-4">
+              <a href="portfolio/cyber_rent.html" class="block w-full py-2 text-xs font-bold text-brand-accent uppercase tracking-widest hover:text-[#00c853] transition-colors text-center border border-brand-accent/20 rounded hover:bg-brand-accent/10">
+                VER CASO DE ESTUDIO →
+              </a>
+            </div>
+          </article>
+
+          <!-- Price Verifier Card -->
+          <article class="product-card flex flex-col h-full bg-brand-surface rounded-custom overflow-hidden border border-white/5 hover:border-brand-accent/30 transition-all hover:shadow-2xl hover:shadow-brand-accent/5">
+            <a href="portfolio/price_verifier.html" class="block h-56 bg-[#0c1e3a] flex items-center justify-center p-8 border-b border-white/5 overflow-hidden">
+              <img alt="Price Verifier Solution" class="rounded shadow-2xl h-4/5 transform hover:scale-105 transition-transform duration-500" src="assets/portfolio/price_verifier/Verificador%20Precios.jpg" />
+            </a>
+            <div class="p-8 flex flex-col flex-grow">
+              <a href="portfolio/price_verifier.html">
+                <h3 class="text-2xl font-bold mb-3 text-white hover:text-brand-accent transition-colors">Price Verifier</h3>
+              </a>
+              <p class="text-brand-secondary text-sm mb-2 italic">Consulta Retail - Retail Tech</p>
+              <p class="text-brand-secondary mb-6 flex-grow">
+                <strong>Eficiencia en el punto de venta:</strong> Sistema para terminales de consulta rápida de precios y stock. Integración con hardware HID y bases de datos embebidas.
+              </p>
+              <div class="pt-6 border-t border-white/5">
+                <p class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-3">Tech Stack</p>
+                <p class="text-xs text-brand-secondary">VB for Windows CE</p>
+              </div>
+            </div>
+            <div class="p-8 pt-4">
+              <a href="portfolio/price_verifier.html" class="block w-full py-2 text-xs font-bold text-brand-accent uppercase tracking-widest hover:text-[#00c853] transition-colors text-center border border-brand-accent/20 rounded hover:bg-brand-accent/10">
+                VER CASO DE ESTUDIO →
+              </a>
+            </div>
+          </article>
+
+          <!-- AguaNet Card -->
+          <article class="product-card flex flex-col h-full bg-brand-surface rounded-custom overflow-hidden border border-white/5 hover:border-brand-accent/30 transition-all hover:shadow-2xl hover:shadow-brand-accent/5">
+            <a href="portfolio/aguanet.html" class="block h-56 bg-[#0c1e3a] flex items-center justify-center p-8 border-b border-white/5 overflow-hidden">
+              <img alt="AguaNet System" class="rounded shadow-2xl h-4/5 transform hover:scale-105 transition-transform duration-500" src="assets/portfolio/aguanet/6.jpg" />
+            </a>
+            <div class="p-8 flex flex-col flex-grow">
+              <a href="portfolio/aguanet.html">
+                <h3 class="text-2xl font-bold mb-3 text-white hover:text-brand-accent transition-colors">AguaNet</h3>
+              </a>
+              <p class="text-brand-secondary text-sm mb-2 italic">Gestión de Recursos Hídricos - GovTech</p>
+              <p class="text-brand-secondary mb-6 flex-grow">
+                <strong>Administración de servicios públicos:</strong> Control de lecturas, facturación masiva y recaudación para organismos de agua. Robusta gestión de bases de datos de usuarios.
+              </p>
+              <div class="pt-6 border-t border-white/5">
+                <p class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-3">Tech Stack</p>
+                <p class="text-xs text-brand-secondary">Visual Basic .NET • SQL Server Express • Crystal Reports • ActiveX</p>
+              </div>
+            </div>
+            <div class="p-8 pt-4">
+              <a href="portfolio/aguanet.html" class="block w-full py-2 text-xs font-bold text-brand-accent uppercase tracking-widest hover:text-[#00c853] transition-colors text-center border border-brand-accent/20 rounded hover:bg-brand-accent/10">
+                VER CASO DE ESTUDIO →
+              </a>
+            </div>
+          </article>
+
+          <!-- iParking Card -->
+          <article class="product-card flex flex-col h-full bg-brand-surface rounded-custom overflow-hidden border border-white/5 hover:border-brand-accent/30 transition-all hover:shadow-2xl hover:shadow-brand-accent/5">
+            <a href="portfolio/parking.html" class="block h-56 bg-[#0c1e3a] flex items-center justify-center p-8 border-b border-white/5 overflow-hidden">
+              <img alt="Sistema Gestión Estacionamientos" class="rounded shadow-2xl h-4/5 transform hover:scale-105 transition-transform duration-500" src="assets/portfolio/parking/mov_entrada.png" />
+            </a>
+            <div class="p-8 flex flex-col flex-grow">
+              <a href="portfolio/parking.html">
+                <h3 class="text-2xl font-bold mb-3 text-white hover:text-brand-accent transition-colors">iParking</h3>
+              </a>
+              <p class="text-brand-secondary text-sm mb-2 italic">Control de Accesos - Real Estate</p>
+              <p class="text-brand-secondary mb-6 flex-grow">
+                <strong>Control operativo total:</strong> Automatización de entradas y salidas, cálculo de tarifas dinámicas y auditoría de recaudación para estacionamientos comerciales.
+              </p>
+              <div class="pt-6 border-t border-white/5">
+                <p class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-3">Tech Stack</p>
+                <p class="text-xs text-brand-secondary">VB 6.0 • MS Access • Crystal Reports</p>
+              </div>
+            </div>
+            <div class="p-8 pt-4">
+              <a href="portfolio/parking.html" class="block w-full py-2 text-xs font-bold text-brand-accent uppercase tracking-widest hover:text-[#00c853] transition-colors text-center border border-brand-accent/20 rounded hover:bg-brand-accent/10">
+                VER CASO DE ESTUDIO →
+              </a>
+            </div>
+          </article>
+
+          <!-- HelpDesk Card -->
+          <article class="product-card flex flex-col h-full bg-brand-surface rounded-custom overflow-hidden border border-white/5 hover:border-brand-accent/30 transition-all hover:shadow-2xl hover:shadow-brand-accent/5">
+            <a href="portfolio/helpdesk.html" class="block h-56 bg-[#0c1e3a] flex items-center justify-center p-8 border-b border-white/5 overflow-hidden">
+              <img alt="Sistema HelpDesk" class="rounded shadow-2xl h-4/5 transform hover:scale-105 transition-transform duration-500" src="assets/portfolio/helpdesk/Captura%205%20full.jpg" />
+            </a>
+            <div class="p-8 flex flex-col flex-grow">
+              <a href="portfolio/helpdesk.html">
+                <h3 class="text-2xl font-bold mb-3 text-white hover:text-brand-accent transition-colors">Sistema HelpDesk</h3>
+              </a>
+              <p class="text-brand-secondary text-sm mb-2 italic">Gestión de Soporte Técnico - Enterprise</p>
+              <p class="text-brand-secondary mb-6 flex-grow">
+                <strong>Solución administrativa robusta:</strong> Gestión integral de órdenes de trabajo, seguimiento de incidencias y bitácora de avances para departamentos técnicos.
+              </p>
+              <div class="pt-6 border-t border-white/5">
+                <p class="text-xs text-brand-accent font-bold uppercase tracking-widest mb-3">Tech Stack</p>
+                <p class="text-xs text-brand-secondary">VB 6.0 • MS Access</p>
+              </div>
+            </div>
+            <div class="p-8 pt-4">
+              <a href="portfolio/helpdesk.html" class="block w-full py-2 text-xs font-bold text-brand-accent uppercase tracking-widest hover:text-[#00c853] transition-colors text-center border border-brand-accent/20 rounded hover:bg-brand-accent/10">
+                VER CASO DE ESTUDIO →
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-12 border-t border-white/5 bg-[#081324]">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-brand-secondary">
+      <div class="mb-4 md:mb-0">
+        © 2026 I.S.C. José Gregorio Hernández Trejo. Consultoría de Software & Transformación Digital.
+      </div>
+      <div class="flex space-x-8">
+        <a href="https://www.linkedin.com/in/greg-hernandez-android-dev/" target="_blank" class="hover:text-brand-accent transition-colors">LinkedIn</a>
+        <a href="#" class="hover:text-brand-accent transition-colors">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
