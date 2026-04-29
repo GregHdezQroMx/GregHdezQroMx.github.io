@@ -90,15 +90,27 @@
 }
 
 .orbit-1 {
-  animation: orbit 20s linear infinite;
+  animation: orbit 24s linear infinite;
 }
 
 .orbit-2 {
-  animation: orbit 20s linear infinite -6.66s;
+  animation: orbit 24s linear infinite -4s;
 }
 
 .orbit-3 {
-  animation: orbit 20s linear infinite -13.33s;
+  animation: orbit 24s linear infinite -8s;
+}
+
+.orbit-4 {
+  animation: orbit 24s linear infinite -12s;
+}
+
+.orbit-5 {
+  animation: orbit 24s linear infinite -16s;
+}
+
+.orbit-6 {
+  animation: orbit 24s linear infinite -20s;
 }
 
 /* ==========================================
