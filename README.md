@@ -37,7 +37,7 @@ Para visualizar o seguir desarrollando la landing page:
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/ghetzoom/GregHdezQroMx.github.io.git
+   git clone https://github.com/GregHdezQroMx/GregHdezQroMx.github.io.git
    ```
 2. **Servidor local (recomendado):**
    ```bash
